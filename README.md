@@ -35,11 +35,12 @@ Perl command line script to convert tweets.js from a downloaded Twitter archive 
 ⭕️ may need to include file chunking if browser hangs on large archives<br />
 ⭕️ need to ensure no data is stored on glitch's servers<br />
 
-### Fork of ozh/ozh-tweet-archiver
+### Fork of <a href="https://github.com/ozh/ozh-tweet-archiver">ozh/ozh-tweet-archiver</a>
 
 ⭕️ add flag when tweet data has been edited on WordPress and varies from import, see mastodon implementation suggestion: https://github.com/mastodon/mastodon/issues/981#issuecomment-493412480
+⭕️ integrate WP Twitter Threads unroller https://wordpress.org/plugins/wp-twitter-threads/
 
-### Fork of ozh/ozh-tweet-archiver-theme
+### Fork of <a href="https://github.com/ozh/ozh-tweet-archiver-theme">ozh/ozh-tweet-archiver-theme</a>
 
 🟡 rewrite using semantic tags instead of `<div>`s<br />
 ✅ add Twitter references and tools sidebar<br />
