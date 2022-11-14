@@ -37,7 +37,7 @@ Perl command line script to convert tweets.js from a downloaded Twitter archive 
 
 ### Fork of <a href="https://github.com/ozh/ozh-tweet-archiver">ozh/ozh-tweet-archiver</a>
 
-⭕️ add flag when tweet data has been edited on WordPress and varies from import, see mastodon implementation suggestion: https://github.com/mastodon/mastodon/issues/981#issuecomment-493412480
+⭕️ add flag when tweet data has been edited on WordPress and varies from import, see mastodon implementation suggestion: https://github.com/mastodon/mastodon/issues/981#issuecomment-493412480<br />
 ⭕️ integrate WP Twitter Threads unroller https://wordpress.org/plugins/wp-twitter-threads/
 
 ### Fork of <a href="https://github.com/ozh/ozh-tweet-archiver-theme">ozh/ozh-tweet-archiver-theme</a>
