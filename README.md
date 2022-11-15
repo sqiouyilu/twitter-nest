@@ -47,6 +47,18 @@ Perl command line script to convert downloaded Twitter archive tweets from JSON 
 
 ## Additional tools needed
 
+### Website hosting and domain name
+
+Space to store your tweets and an address for your space. Beginner's guide here: [https://s.qiouyi.lu/resources/launchpad-themes/](Launchpad Themes # Why have a website?)
+
+### Self-hosted WordPress
+
+Content management system for tweets. <a href="https://wordpress.org/download/">Download at WordPress.org.</a> 
+
+Free WordPress.com accounts do not allow you to use plugins.
+
+If you have an existing WordPress site, install a fresh WordPress in a subdomain or subdirectory to make managing your posts easier.
+
 ### CSV importer for WordPress
 
 Import downloaded archive. 
