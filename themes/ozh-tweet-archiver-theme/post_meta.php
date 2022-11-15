@@ -14,7 +14,13 @@
         &mdash;
     <?php } ?>
     <?php the_time('g:ia M j Y') ?>
-    &mdash; <a href="<?php do_action( 'ozh_ta_tweet_link' ); ?>" title="Original on Twitter"><i class="fa fa-twitter"></i></a>
-    <a href="<?php the_permalink() ?>" title="Permalink" rel="bookmark">&#0182;</a>
-    <?php edit_post_link('edit', '', ''); ?>
+    
+    <br />
+    
+    <a href="<?php do_action( 'ozh_ta_tweet_link' ); ?>" title="Original on Twitter"><i class="fa fa-twitter"></i> Original</a>
+    <a href="<?php the_permalink() ?>" title="Permalink" rel="bookmark"><i class="fa fa-bookmark"></i> Local Permalink</a>
+    &mdash; <a href="https://twitter.com/intent/tweet?in_reply_to=<?php do_action( 'ozh_ta_id' ); ?>"><i class="fa fa-reply"></i> Reply</a>
+    <a href="https://twitter.com/intent/retweet?tweet_id=<?php do_action( 'ozh_ta_id' ); ?>"><i class="fa fa-retweet"></i> Retweet</a>
+    <a href="https://twitter.com/intent/like?tweet_id=<?php do_action( 'ozh_ta_id' ); ?>"><i class="fa fa-heart"></i> Like</a>
+    <?php edit_post_link('[edit]', '', ''); ?>
 </p>

@@ -10,7 +10,7 @@
  *
  */
 ?>
-<div id="stream_toggle">
+<nav id="stream_toggle">
 <ul>
     <li>
         <?php
@@ -34,4 +34,4 @@
         ?>
     </li>
 </ul>
-</div>
+</nav>

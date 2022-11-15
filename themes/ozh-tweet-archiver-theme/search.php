@@ -3,25 +3,27 @@
 <?php if (have_posts()) : ?>
 
 <!-- !BEGIN #tweets -->
-<div id="tweets">
+<main>
 <h2>Search results for &laquo;<?php the_search_query(); ?>&raquo; <?php if( $paged > 1 ) echo "&laquo; page $paged"; ?></h2>
 
 <?php while (have_posts()) : the_post(); ?>
-  <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-    <div class="tweet">
+  <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+    <section>
       <?php the_content(); ?>
-    </div>
-    <?php get_template_part( 'post_meta' ); ?>
-  </div>
+    </section>
+    <footer>
+	    <?php get_template_part( 'post_meta' ); ?>
+  	</footer>
+  </article>
 
 <?php endwhile; ?>
 
-    <div class="pagination">
+    <nav class="pagination">
         <div class="older"><?php next_posts_link('&laquo; Older tweets') ?></div>
         <div class="newer"><?php previous_posts_link('Newer tweets &raquo;') ?></div>
-    </div>
+    </nav>
 
-</div>
+</main>
 <!-- END #tweets -->
 
 <?php else : ?>
