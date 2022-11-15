@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 <head>
   <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php wp_title('|', true, 'right'); ?> <?php bloginfo('name'); ?></title>
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/font-awesome.min.css" type="text/css" media="screen" />
@@ -9,19 +10,19 @@
 </head>
 <body <?php body_class(); ?>>
 
-<div id="header">
-<a href="<?php bloginfo('url'); ?>" title="Back home"></a>
-</div>
+<header>
+	<a href="<?php bloginfo('url'); ?>" title="Back home"></a>
+</header>
 
-<div id="stats-wrap">
+<header id="stats-wrap">
     <ul id="stats-header">
         <li id="tiny-name">DISPLAY NAME <a href="https://twitter.com/USERNAME">@USERNAME</a></li>
-        <li><span class="what">tweets</span><span class="much"><?php do_action('ozh_ta_total_tweets'); ?></span></li>
-        <li><span class="what">following</span><span class="much"><?php do_action('ozh_ta_total_following'); ?> <a href="https://twitter.com/USERNAME/following"><i class="fa fa-caret-right"></i></a></span></li>
-        <li><span class="what">followers</span><span class="much"><?php do_action('ozh_ta_total_followers'); ?> <a href="https://twitter.com/USERNAME/followers"><i class="fa fa-caret-right"></i></a></span></li>
-        <li><span class="what">listed</span><span class="much"><?php do_action('ozh_ta_total_listed'); ?> <a href="https://twitter.com/USERNAME/memberships"><i class="fa fa-caret-right"></i></a></span></li>
+        <li><span class="metric">tweets</span><span class="statistic"><?php do_action('ozh_ta_total_tweets'); ?></span></li>
+        <li><span class="metric">following</span><span class="statistic"><?php do_action('ozh_ta_total_following'); ?> <a href="https://twitter.com/USERNAME/following"><i class="fa fa-caret-right"></i></a></span></li>
+        <li><span class="metric">followers</span><span class="statistic"><?php do_action('ozh_ta_total_followers'); ?> <a href="https://twitter.com/USERNAME/followers"><i class="fa fa-caret-right"></i></a></span></li>
+        <li><span class="metric">listed</span><span class="statistic"><?php do_action('ozh_ta_total_listed'); ?> <a href="https://twitter.com/USERNAME/memberships"><i class="fa fa-caret-right"></i></a></span></li>
     </ul>
-</div>
+</header>
 
 <!-- !BEGIN #container -->
 <div id="container">
@@ -30,11 +31,11 @@
 <div id="content">
 
 <!-- !BEGIN #user -->
-<div id="user">
-    <div id="user-pic">
+<aside id="user">
+    <figure id="user-pic">
         <a href="SET TO WORDPRESS URL OR TWITTER PROFILE" class="avatar"></a>
-    </div>
-    <div id="user-info">
+    </figure>
+    <section id="user-info">
         <ul>
             <li class="user-displayname">DISPLAY NAME</li>
             <li class="username"><i class="fa fa-twitter"></i>@<a href="https://twitter.com/USERNAME">USERNAME</a></li>
@@ -50,8 +51,8 @@
 			<li class="user-dm-follow"><p><a href="https://twitter.com/messages/compose?recipient_id=YOUR_USER_ID&text=DEFAULT_MESSAGE" class="twitter-dm-button" data-screen-name="@username">DM @USERNAME</a></p>
 				<p><a class="twitter-follow-button" href="https://twitter.com/USERNAME" data-show-count="false" data-show-screen-name="false">Follow @USERNAME</a></p></li>
         </ul>
-    </div>
-</div>
+    </section>
+</aside>
 <!-- END #user -->
 	
 <!-- !BEGIN Twitter tools -->
