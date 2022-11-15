@@ -180,7 +180,7 @@ header a:hover {
 	list-style:none;
 }
 
-#user-info i.fa {
+#user-info i.fa, #user-info i.fa-brands {
     color:#aaa;
     width:24px;
 }
