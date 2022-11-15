@@ -22,7 +22,27 @@ The Twitter archiver plugin can only access your 3,200 most recent tweets for an
 
 ----
 
-## Available tools
+## Prerequisites
+
+### Website hosting and domain name
+
+- Space to store your tweets and an address for your space. 
+- **Beginner's guide:** [Launchpad Themes # Why have a website?](https://s.qiouyi.lu/resources/launchpad-themes/)
+
+### Self-hosted WordPress
+
+- Content management system for tweets. [Download at WordPress.org.](https://wordpress.org/download/)
+- Free WordPress.com accounts do not allow you to use plugins.
+- If you have an existing WordPress site, install a fresh WordPress in a subdomain or subdirectory to make managing your posts easier.
+
+### CSV importer for WordPress
+
+- Import downloaded archive. 
+- Several plugins available. [Select one that meets your needs from WordPress repository.](https://wordpress.org/plugins/tags/csv/)
+
+----
+
+## Twitter nest toolkit
 
 ### [ozh/ozh-tweet-archiver](https://github.com/ozh/ozh-tweet-archiver)
 
@@ -48,23 +68,13 @@ The Twitter archiver plugin can only access your 3,200 most recent tweets for an
 
 ----
 
-## Additional tools needed
+## Additional tools and resources
 
-### Website hosting and domain name
+### [jessefogarty/tweet-archive-converter.py](https://gist.github.com/jessefogarty/b0f2d4ea6bdd770e5e9e94d54154c751)
 
-- Space to store your tweets and an address for your space. 
-- **Beginner's guide:** [Launchpad Themes # Why have a website?](https://s.qiouyi.lu/resources/launchpad-themes/)
-
-### Self-hosted WordPress
-
-- Content management system for tweets. [Download at WordPress.org.](https://wordpress.org/download/)
-- Free WordPress.com accounts do not allow you to use plugins.
-- If you have an existing WordPress site, install a fresh WordPress in a subdomain or subdirectory to make managing your posts easier.
-
-### CSV importer for WordPress
-
-- Import downloaded archive. 
-- Several plugins available. [Select one that meets your needs from WordPress repository.](https://wordpress.org/plugins/tags/csv/)
+- Python command line script to convert downloaded Twitter archive tweets from JSON to CSV.
+- Will capture all data in JSON, but may require further cleanup if you want to import hashtags and mentions as tags.
+- Does not produce human-readable log.
 
 ----
 
