@@ -35,6 +35,10 @@ Theme to display tweets.
 
 Backend interface for tweeting from WordPress. Uses OAuth login.
 
+### Settings page
+
+Local copy of Twitter settings menu. The links take you back to the Twitter website to manage account settings.
+
 ----
 
 ## Additional tools needed
