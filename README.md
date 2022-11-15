@@ -22,47 +22,66 @@ Perl command line script to convert tweets.js from a downloaded Twitter archive 
 
 ### Instructions and documentation
 
-⭕️ installing a fresh WordPress for nest<br />
-⭕️ signing up for Twitter developer account if you want automated backups<br />
-⭕️ installing necessary WordPress plugins<br />
-⭕️ installing and modding theme<br />
-⭕️ how to run script to convert archive to CSV<br />
-⭕️ how to import archive to WordPress<br />
+⭕️ installing a fresh WordPress for nest
+
+⭕️ signing up for Twitter developer account if you want automated backups
+
+⭕️ installing necessary WordPress plugins
+
+⭕️ installing and modding theme
+
+⭕️ how to run script to convert archive to CSV
+
+⭕️ how to import archive to WordPress
+
 ⭕️ nest workflow: tweets created from WordPress will not be published to Twitter (would create archive loop), but publishing to Twitter will save back to WordPress
 
 ### glitch.me browser app for tweetsJS-to-tweetsCSV.pl
 
-⭕️ create interface on glitch.me so you can convert files without using the command line<br />
-⭕️ may need to include file chunking if browser hangs on large archives<br />
-⭕️ need to ensure no data is stored on glitch's servers<br />
+⭕️ create interface on glitch.me so you can convert files without using the command line
 
-### Fork of <a href="https://github.com/ozh/ozh-tweet-archiver">ozh/ozh-tweet-archiver</a>
+⭕️ may need to include file chunking if browser hangs on large archives
+
+⭕️ need to ensure no data is stored on glitch's servers
+
+### Mod of <a href="https://github.com/ozh/ozh-tweet-archiver">ozh/ozh-tweet-archiver</a>
 
 ⭕️ add ability to auto-import multimedia—plugin currently hotlinks to Twitter, need a way to make a local backup, ideally include some mechanism to define import size limits and specify which types are downloaded (e.g. exclude video)
-⭕️ add flag when tweet data has been edited on WordPress and varies from import, see mastodon implementation suggestion: https://github.com/mastodon/mastodon/issues/981#issuecomment-493412480 (adding "edited on" and timestamp likely sufficient, prefer integrating a diffchecker plugin to make changes readable)<br />
+
+⭕️ add flag when tweet data has been edited on WordPress and varies from import, see mastodon implementation suggestion: https://github.com/mastodon/mastodon/issues/981#issuecomment-493412480 (adding "edited on" and timestamp likely sufficient, prefer integrating a diffchecker plugin to make changes readable)
+
 ⭕️ integrate WP Twitter Threads unroller https://wordpress.org/plugins/wp-twitter-threads/ (need to verify if thread unrolled within last 3,200 tweets will remain unrolled once it goes past the 3,200 threshold)
 
-### Fork of <a href="https://github.com/ozh/ozh-tweet-archiver-theme">ozh/ozh-tweet-archiver-theme</a>
+### Mod of <a href="https://github.com/ozh/ozh-tweet-archiver-theme">ozh/ozh-tweet-archiver-theme</a>
 
-🟡 rewrite using semantic tags instead of `<div>`s<br />
-✅ add Twitter references and tools sidebar<br />
-⭕️ rewrite for proper responsiveness<br />
-⭕️ add web intents to allow likes & retweets from nest<br />
-⭕️ add WordPress customizer GUI support with editable widgets<br />
+🟡 rewrite using semantic tags instead of `<div>`s
+
+✅ add Twitter references and tools sidebar
+
+⭕️ rewrite for proper responsiveness
+
+⭕️ add web intents to allow likes & retweets from nest
+
+⭕️ add WordPress customizer GUI support with editable widgets
+
 ✅ include page of links to Twitter settings (*demo:* https://s.qiouyi.lu/tweets/settings)
 
-### Fork of wordpress-dashboard-twitter
+### Mod of wordpress-dashboard-twitter
 
 Not on Github: https://wordpress.org/plugins/wordpress-dashboard-twitter/
 
-⭕️ add support for 280-character tweets<br />
-⭕️ add web intents to support liking tweets from dashboard<br />
-⭕️ add support for conversational context & threads<br />
+⭕️ add support for 280-character tweets
+
+⭕️ add web intents to support liking tweets from dashboard
+
+⭕️ add support for conversational context & threads
+
 ⭕️ add infinite scroll or at least increase number of tweets visible on load
 
 ### Twitter contact management tool
 
-⭕️ import list of Twitter users as WordPress users<br />
+⭕️ import list of Twitter users as WordPress users
+
 ⭕️ use native WordPress user management tools to annotate users and add contact information
 
 ----
