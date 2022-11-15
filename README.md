@@ -11,7 +11,11 @@ Even if the API goes down, you can maintain an archive of your tweets and use th
 
 The Twitter archiver plugin can only access your 3,200 most recent tweets for an initial import. You will need to <a href="https://help.twitter.com/en/managing-your-account/how-to-download-your-twitter-archive" target="_new">download your archive from Twitter</a> if you want to restore older tweets.
 
+----
+
 **Live demo:** https://s.qiouyi.lu/tweets
+
+----
 
 **Feature development roadmap:** https://github.com/sqiouyilu/twitter-nest/wiki/Feature-development-roadmap
 
@@ -21,7 +25,7 @@ The Twitter archiver plugin can only access your 3,200 most recent tweets for an
 
 ### <a href="https://github.com/ozh/ozh-tweet-archiver">ozh/ozh-tweet-archiver</a>
 
-Plugin to automatically archive tweets to WordPress. Requires developer account.
+Automatically archive new tweets to WordPress. Requires <a href="https://developer.twitter.com/">developer account</a>.
 
 ### <a href="https://github.com/ozh/ozh-tweet-archiver-theme">ozh/ozh-tweet-archiver-theme</a>
 
@@ -33,11 +37,11 @@ Backend interface for tweeting from WordPress. Uses OAuth login.
 
 ### Settings page
 
-Local copy of Twitter settings menu. The links take you back to the Twitter website to manage account settings.
+Local copy of Twitter settings menu. Links take you back to Twitter website to manage your account.
 
 ### tweetsJS-to-tweetsCSV.pl
 
-Perl command line script to convert tweets.js from a downloaded Twitter archive to a CSV that can be imported to WordPress with a CSV import plugin.
+Perl command line script to convert downloaded Twitter archive tweets from JSON to CSV.
 
 ----
 
@@ -45,7 +49,9 @@ Perl command line script to convert tweets.js from a downloaded Twitter archive 
 
 ### CSV importer for WordPress
 
-Needed to import a downloaded archive. Several are available. <a href="https://wordpress.org/plugins/tags/csv/">Select one that meets your needs from the WordPress plugins repository.</a>
+Import downloaded archive. 
+
+Several plugins are available. <a href="https://wordpress.org/plugins/tags/csv/">Select one that meets your needs from the WordPress plugins repository.</a>
 
 ----
 
@@ -53,7 +59,7 @@ Needed to import a downloaded archive. Several are available. <a href="https://w
 
 ### Twitter contact manager
 
-Tool to import Twitter follows as WordPress users so you can annotate entries and attach contact information.
+Import Twitter follows as WordPress users so you can annotate entries, attach contact information, and maintain your connections.
 
 ### glitch.me interface for tweet archive converter
 
