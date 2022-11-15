@@ -200,8 +200,10 @@ header a:hover {
 ----------------------------------------------- */
 
 /* TEMPORARY HACK - FIX FLOAT ISSUE */
-main {
-	margin-top: -800px;
+@media all and (min-width: 850px) {
+	main {
+		margin-top: -800px;
+	}
 }
 
 main h2 {
