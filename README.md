@@ -2,14 +2,14 @@
 Tools for creating a decentralized Twitter clone on WordPress. 
 
 - Tweet without using the Twitter interface.
-- Automatically back up new tweets to WordPress. (requires <a href="https://developer.twitter.com/">developer account</a>)
+- Automatically back up new tweets to WordPress. (requires [developer account](https://developer.twitter.com/))
 - Import your tweet archive.
 
 So long as the Twitter API is still working, you can tweet regardless of how the official website and app are functioning. 
 
 Even if the API goes down, you can maintain an archive of your tweets and use the WordPress interface to add to it locally.
 
-The Twitter archiver plugin can only access your 3,200 most recent tweets for an initial import. You will need to <a href="https://help.twitter.com/en/managing-your-account/how-to-download-your-twitter-archive" target="_new">download your archive from Twitter</a> if you want to restore older tweets.
+The Twitter archiver plugin can only access your 3,200 most recent tweets for an initial import. You will need to [download your archive from Twitter](https://help.twitter.com/en/managing-your-account/how-to-download-your-twitter-archive) if you want to restore older tweets.
 
 ----
 
@@ -23,15 +23,15 @@ The Twitter archiver plugin can only access your 3,200 most recent tweets for an
 
 ## Available tools
 
-### <a href="https://github.com/ozh/ozh-tweet-archiver">ozh/ozh-tweet-archiver</a>
+### [ozh/ozh-tweet-archiver](https://github.com/ozh/ozh-tweet-archiver)
 
-Automatically archive new tweets to WordPress. Requires <a href="https://developer.twitter.com/">developer account</a>.
+Automatically archive new tweets to WordPress. Requires [developer account](https://developer.twitter.com/).
 
-### <a href="https://github.com/ozh/ozh-tweet-archiver-theme">ozh/ozh-tweet-archiver-theme</a>
+### [ozh/ozh-tweet-archiver-theme](https://github.com/ozh/ozh-tweet-archiver-theme)
 
 Theme to display tweets.
 
-### <a href="https://wordpress.org/plugins/wordpress-dashboard-twitter/">wordpress-dashboard-twitter</a>
+### [wordpress-dashboard-twitter](https://wordpress.org/plugins/wordpress-dashboard-twitter/)
 
 Backend interface for tweeting from WordPress. Uses OAuth login.
 
@@ -49,11 +49,11 @@ Perl command line script to convert downloaded Twitter archive tweets from JSON 
 
 ### Website hosting and domain name
 
-Space to store your tweets and an address for your space. Beginner's guide here: [https://s.qiouyi.lu/resources/launchpad-themes/](Launchpad Themes # Why have a website?)
+Space to store your tweets and an address for your space. Beginner's guide here: [Launchpad Themes # Why have a website?](https://s.qiouyi.lu/resources/launchpad-themes/)
 
 ### Self-hosted WordPress
 
-Content management system for tweets. <a href="https://wordpress.org/download/">Download at WordPress.org.</a> 
+Content management system for tweets. [Download at WordPress.org.](https://wordpress.org/download/)
 
 Free WordPress.com accounts do not allow you to use plugins.
 
@@ -63,7 +63,7 @@ If you have an existing WordPress site, install a fresh WordPress in a subdomain
 
 Import downloaded archive. 
 
-Several plugins are available. <a href="https://wordpress.org/plugins/tags/csv/">Select one that meets your needs from the WordPress plugins repository.</a>
+Several plugins are available. [Select one that meets your needs from the WordPress plugins repository.](https://wordpress.org/plugins/tags/csv/)
 
 ----
 
@@ -83,9 +83,9 @@ So you don't have to use the command line to convert your archive.
 
 Finally, the skills I learned to process linguistic corpora come in handy for processing Twitter data, which is, ultimately, speech data. :)
 
-Site: <a href="https://s.qiouyi.lu/" target="_new">s.qiouyi.lu</a><br />
-Email: <a href="mailto:s@qiouyi.lu">s@qiouyi.lu</a><br />
-Twitter: <a href="https://twitter.com/sqiouyilu" target="_new">@sqiouyilu</a>
+Site: [s.qiouyi.lu](https://s.qiouyi.lu/)<br />
+Email: [s@qiouyi.lu](mailto:s@qiouyi.lu)<br />
+Twitter: [@sqiouyilu](https://twitter.com/sqiouyilu)
 
 **Tip Jars**
 
