@@ -1,0 +1,279 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Dashboard Twitter v1.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2010-09-15 21:27+0100\n"
+"Last-Translator: Rene <info@wpwebshop.com>\n"
+"Language-Team: Dutch translation by WordPressWebshop.com <info@wppg.me>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Dutch\n"
+"X-Poedit-Country: NETHERLANDS\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:47
+#: inc/wpdt.func.php:99
+#: inc/wpdt.func.php:149
+msgid "From"
+msgstr "Van"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:53
+msgid "in reply to"
+msgstr "in antwoord op"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:91
+msgid "No direct messages!"
+msgstr "Geen privéberichten!"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:141
+msgid "No sent messages!"
+msgstr "Geen verzonden berichten!"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:151
+msgid "to"
+msgstr "aan"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:192
+msgid "No favorites!"
+msgstr "Geen favorieten!"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:212
+msgid "WordPress Dashboard Twitter"
+msgstr "WordPress Dashboard Twitter"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:244
+msgid "Please enter your Twitter username and password by clicking the widget's 'configure' link!"
+msgstr "Voer je Twitter gebruikersnaam en wachtwoord in door te klikken op de widget's 'configureer' link"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:258
+#: wp-dashboard-twitter.php:362
+msgid "Mentions"
+msgstr "Vermeldingen"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:259
+#: wp-dashboard-twitter.php:363
+msgid "Direct"
+msgstr "Direct"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:260
+#: wp-dashboard-twitter.php:364
+msgid "Sent"
+msgstr "Verzonden"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:261
+#: wp-dashboard-twitter.php:365
+msgid "Favorites"
+msgstr "Favorieten"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:267
+#: wp-dashboard-twitter.php:274
+#: wp-dashboard-twitter.php:281
+#: wp-dashboard-twitter.php:288
+msgid "Reload"
+msgstr "Herladen"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:435
+#, php-format
+msgid "%s ago"
+msgstr "%s geleden"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:344
+msgid "Twitter Username"
+msgstr "Twitter Gebruikersnaam"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:348
+msgid "Twitter Password"
+msgstr "Twitter Wachtwoord"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:352
+msgid "How many items?"
+msgstr "Hoeveel items?"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:377
+msgid "Show Avatars?"
+msgstr "Weergeven Avatars?"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:513
+msgid "WordPress Dashboard Twitter requires at least WordPress 2.7!"
+msgstr "WordPress Dashboard Twitter benodigd tenminste WordPress 2.7!"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:526
+msgid "WordPress Dashboard Twitter requires at least PHP5!"
+msgstr "WordPress Dashboard Twitter benodigd tenminste PHP5!"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:32
+msgid "No mentions!"
+msgstr "Geen vermeldingen!"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:246
+msgid "<strong>NOTE:</strong> The Twitter API only allows clients to make a limited number of calls in a given period. You just exceeded the rate limit."
+msgstr "<strong>OPMERKING:</strong> De Twitter API staat clients alleen een gelimiteerd aantal calls toe in een bepaalde periode. Je bent net over de limiet heen."
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:49
+#: inc/wpdt.func.php:101
+msgid "Reply"
+msgstr "Antwoorden"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:360
+msgid "Tab to open by default"
+msgstr "Standaard te openen tab"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:420
+#, php-format
+msgid "Hello %s"
+msgstr "Hallo %s"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:420
+#, php-format
+msgid "You have %d followers"
+msgstr "Je hebt %d volgers"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:267
+#: wp-dashboard-twitter.php:274
+#: wp-dashboard-twitter.php:281
+#: wp-dashboard-twitter.php:288
+msgid "Update Status"
+msgstr "Status bijwerken"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:303
+#: wp-dashboard-twitter.php:479
+msgid "Send Update"
+msgstr "Update verzenden"
+
+# @ default
+#: wp-dashboard-twitter.php:303
+msgid "Cancel"
+msgstr "Afbreken"
+
+# @ default
+#: inc/wpdt.func.php:203
+#, php-format
+msgid "By %s"
+msgstr "Door %s"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:294
+msgid "Shorten URL"
+msgstr "Verkorten URL"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:478
+msgid "An empty tweet would not make sense, eh?"
+msgstr "Een lege tweet is zinloos he ?"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:482
+msgid "Please enter a long URL!"
+msgstr "Geef een lange URL in!"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:49
+msgid "Reply to a user"
+msgstr "Beantwoord een gebruiker"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:101
+#, php-format
+msgid "Compose a new Direct Message to %s"
+msgstr "Schrijf een nieuw privébericht naar %s"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:296
+msgid "Upload &amp; Shorten Image"
+msgstr "Upload &amp; verkorte afbeelding"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:381
+msgid "Use Twitpic to share photos on Twitter?"
+msgstr "Twitpic gebruiken om foto's te delen bij Twitter?"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:480
+msgid "Send Direct Message"
+msgstr "Verzend Privébericht"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:483
+msgid "Invalid file extension!"
+msgstr "Verkeerde bestandsextensie!"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:481
+msgid "Sending..."
+msgstr "Verzenden..."
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:267
+#: wp-dashboard-twitter.php:274
+#: wp-dashboard-twitter.php:281
+#: wp-dashboard-twitter.php:288
+#, php-format
+msgid "Remaining API for account %s: %d/%d"
+msgstr "Overblijvende API voor account %s: %d/%d"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:49
+msgid "Retweet this message"
+msgstr "Retweet dit bericht"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:49
+msgid "Retweet"
+msgstr "Retweet"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:240
+#, php-format
+msgid "The following directory needs to be writable: %s [<a href='%s'>Recheck</a>]"
+msgstr "De volgende folder moet beschrijfbaar zijn: %s [<a href='%s'>Controleer</a>]"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:369
+msgid "URL Shortener"
+msgstr "URL Verkorter"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:371
+msgid "wp.gd"
+msgstr "wp.gd"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:372
+msgid "tr.im"
+msgstr "tr.im"
+

@@ -1,0 +1,303 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Dashboard Twitter 0.8.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-09 11:18+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: StamboulBazaar.com <info@stamboulbazaar.com>\n"
+"Language-Team: StamboulBazaar.com <info@stamboulbazaar.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2;plural=n != 1;\n"
+"X-Poedit-Language: Turkish\n"
+"X-Poedit-Country: TURKEY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_c;_e;__ngettext:1,2;__ngettext_noop:1,2;_n:1,2;_nc:1,2;_n_noop:1,2\n"
+"X-Poedit-Basepath: d:\\wordpress\\plugins\\wordpress-dashboard-twitter\n"
+"X-Poedit-SearchPath-0: d:\\wordpress\\plugins\\wordpress-dashboard-twitter\n"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:232
+msgid "WordPress Dashboard Twitter"
+msgstr "WordPress Dashboard Twitter"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:253
+msgid "Twitter is unavailable at the moment. Please try again later!"
+msgstr "Twitter şu an kullanılabilir değil. Lütfen daha sonra tekrar deneyiniz."
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:257
+msgid "This plugin version introduces OAuth Support for Twitter. Twitter announced in December of 2009 the deprecation of Basic Auth on August 16th 2010. Please login with Twitter by clicking the image above, and follow the on-screen instructions."
+msgstr "Bu eklenti sürümü Twitter için OAuth Destek tanıtır. Twitter Ağustos 16, 2010 Aralık ayında 2009 Temel Auth önerilmeyişine açıkladı. Lütfen yukarıdaki resme tıklayarak Twitter ile giriş yapın ve ekrandaki yönergeleri izleyin."
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:266
+#, php-format
+msgid "The following directory needs to be writable: %s [<a href='%s'>Recheck</a>]"
+msgstr "Belirtilen klasör yazılabilir olmalıdır: %s [<a href='%s'>Tekrar Kontrol Et</a>]"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:268
+msgid "<strong>NOTE:</strong> The Twitter API only allows clients to make a limited number of calls in a given period. You just exceeded the rate limit."
+msgstr "<strong>NOT:</strong> Twitter API sadece müşterilere verilen periyod içerisinde limitli aramalara müsade eder. Limitinizi aştınız!"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:270
+#, php-format
+msgid "<strong>NOTE:</strong> Please <a href=\"%s\">save</a> the plugin options for the new options to take effect!"
+msgstr "<strong>NOT:</strong> Lütfen <a href=\"%s\">KAYDEDİN!</a> böylece yeni ayarlarınız geçerli olacaktır."
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:282
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:404
+msgid "Mentions"
+msgstr "Bahsedilenler"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:283
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:405
+msgid "Direct"
+msgstr "Yönlendir"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:284
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:406
+msgid "Sent"
+msgstr "Gönderildi"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:285
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:407
+msgid "Favorites"
+msgstr "Favoriler"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:286
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:408
+msgid "Retweeted"
+msgstr "Tekrar Tweetlendi"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:287
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:409
+msgid "Timeline"
+msgstr "Zaman Çizelgesi"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:293
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:300
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:307
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:314
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:321
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:328
+msgid "Update Status"
+msgstr "Güncelleme Durumu"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:293
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:300
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:307
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:314
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:321
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:328
+#, php-format
+msgid "Remaining API for account %s: %d/%d"
+msgstr "Hesaplar için kalan API %s: %d/%d"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:293
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:300
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:307
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:314
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:321
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:328
+msgid "Reload"
+msgstr "Tekrar Yükle"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:334
+msgid "Shorten URL"
+msgstr "Kısa URL"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:336
+msgid "Upload &amp; Shorten Image"
+msgstr "Yükle &amp; Kısa Resim"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:343
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:540
+msgid "Send Update"
+msgstr "Güncellemeyi Gönder"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:343
+msgid "Cancel"
+msgstr "Vazgeç"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:393
+msgid "How many items?"
+msgstr "Kaç ürün?"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:402
+msgid "Tab to open by default"
+msgstr "Tab varsayılan olarak için"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:413
+msgid "URL Shortener"
+msgstr "URL-Kısaltıcı"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:415
+msgid "wp.gd"
+msgstr "wp.gd"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:416
+msgid "tr.im"
+msgstr "tr.im"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:417
+msgid "bit.ly"
+msgstr "bit.ly"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:422
+msgid "Show Avatars?"
+msgstr "Avatarlar Gösterilsin mi?"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:426
+msgid "Use Twitpic to share photos on Twitter?"
+msgstr "Twitter'da resmini paylaşmak için Twitpic kullanacak mısın?"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:431
+msgid "Make the Dashboard Widget accessible for everyone?"
+msgstr "Panel Bileşenlerini herkes için ulaşılabilir yap?"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:480
+#, php-format
+msgid "Hello %s"
+msgstr "Merhaba %s"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:480
+#, php-format
+msgid "You have %d followers"
+msgstr "%d sayısınca takipçiniz var"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:480
+#, php-format
+msgid "You wrote %d statuses so far and are listed on %d Twitter lists"
+msgstr "Şimdiye kadar %d durumunda yazdınız, ve onlar %d Twitter'in de listeli"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:480
+msgid "Log out"
+msgstr "Çıkış"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:495
+#, php-format
+msgid "%s ago"
+msgstr "%s önce"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:539
+msgid "An empty tweet would not make sense, eh?"
+msgstr "Boş bir tweet mantıklı değildir, değil mi?"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:541
+msgid "Send Direct Message"
+msgstr "Direkt Mesaj Gönder"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:542
+msgid "Verify Credentials"
+msgstr "Kimlik Bilgilerini Kontrol Et"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:543
+msgid "Sending..."
+msgstr "Gönderiliyor..."
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:544
+msgid "Please enter a long URL!"
+msgstr "Lütfen uzun bir URL giriniz!"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:545
+msgid "Invalid file extension!"
+msgstr "Geçersiz dosya uzantısı!"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:575
+msgid "WordPress Dashboard Twitter requires at least WordPress 2.7!"
+msgstr "WordPress Dashboard Twitter en düşük WordPress 2.7 versiyonunda çalışır!"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/wpdt.class.php:588
+msgid "WordPress Dashboard Twitter requires at least PHP5!"
+msgstr "WordPress Dashboard Twitter en düşük PHP5 istemektedir."
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:35
+msgid "No mentions!"
+msgstr "Hiç bahsedilmemiş!"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:49
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:108
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:165
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:221
+msgid "From"
+msgstr "'den"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:51
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:110
+msgid "Reply to a user"
+msgstr "Bir kullanıcıyı cevapla"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:51
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:110
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:167
+msgid "Reply"
+msgstr "Cevapla"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:51
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:110
+msgid "Retweet this message"
+msgstr "Bu mesajı Retweet'la"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:51
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:110
+msgid "Retweet"
+msgstr "Retweet"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:55
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:114
+msgid "in reply to"
+msgstr "'e cevapla"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:94
+msgid "No statuses!"
+msgstr "Durum yok!"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:154
+msgid "No direct messages!"
+msgstr "Yönlendirme mesajı yok!"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:167
+#, php-format
+msgid "Compose a new Direct Message to %s"
+msgstr "Kişi yeni bir yönlendirme mesajı yaz: %s"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:210
+msgid "No sent messages!"
+msgstr "Gönderilen mesaj yok!"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:223
+msgid "to"
+msgstr ":"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:267
+msgid "No favorites!"
+msgstr "Favoriler yok!"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:281
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:332
+#, php-format
+msgid "By %s"
+msgstr "Tarafından: %s"
+
+#: d:\wordpress\plugins\wordpress-dashboard-twitter/inc/wpdt.func.php:323
+msgid "No retweets of your statuses yet!"
+msgstr "Durumunuzu henüz tekrar tweetlemediniz."
+
+#~ msgid ""
+#~ "Please enter your Twitter username and password by clicking the widget's "
+#~ "'configure' link!"
+#~ msgstr ""
+#~ "Indtast dit Twitter-brugernavn og -kodeord ved at klikke på widgettens "
+#~ "'Indstil'-link!"
+
+#~ msgid ""
+#~ "It is recommended to update the widget options for the changes to take "
+#~ "effect!"
+#~ msgstr ""
+#~ "Det anbefales at opdatere widget-indstillingerne, så ændringerne kan slå "
+#~ "igennem!"
+
+#~ msgid "Twitter Username"
+#~ msgstr "Twitter-brugernavn"
+
+#~ msgid "Twitter Password"
+#~ msgstr "Twitter-adgangskode"

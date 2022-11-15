@@ -1,0 +1,216 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-30 06:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#. Name of the plugin
+#: wpdt.class.php:185
+msgid "WordPress Dashboard Twitter"
+msgstr ""
+
+#: wpdt.class.php:205
+msgid "Twitter is unavailable at the moment. Please try again later!"
+msgstr ""
+
+#: wpdt.class.php:209
+msgid ""
+"By clicking the 'Sign in with Twitter' button you will be redirected to the "
+"Twitter website where they ask you to enter your Twitter credentials. The "
+"'WordPress Dashboard Twitter' plugin will not save, collect or share your "
+"credentials and other personal information or use it other than for the "
+"purpose of the sign-in flow."
+msgstr ""
+
+#: wpdt.class.php:218
+msgid ""
+"<strong>NOTE:</strong> The Twitter API only allows clients to make a limited "
+"number of calls in a given period. You just exceeded the rate limit."
+msgstr ""
+
+#: wpdt.class.php:220
+#, php-format
+msgid ""
+"<strong>NOTE:</strong> Please <a href=\"%s\">save</a> the plugin options for "
+"the new options to take effect!"
+msgstr ""
+
+#: wpdt.class.php:233 wpdt.class.php:336
+msgid "Mentions"
+msgstr ""
+
+#: wpdt.class.php:236 wpdt.class.php:337
+msgid "Favorites"
+msgstr ""
+
+#: wpdt.class.php:239 wpdt.class.php:338
+msgid "Retweeted"
+msgstr ""
+
+#: wpdt.class.php:242 wpdt.class.php:339
+msgid "Timeline"
+msgstr ""
+
+#: wpdt.class.php:249 wpdt.class.php:256 wpdt.class.php:263 wpdt.class.php:270
+msgid "Compose New Tweet"
+msgstr ""
+
+#: wpdt.class.php:249 wpdt.class.php:256 wpdt.class.php:263 wpdt.class.php:270
+msgid "Reload"
+msgstr ""
+
+#: wpdt.class.php:249 wpdt.class.php:256 wpdt.class.php:263 wpdt.class.php:270
+#, php-format
+msgid "Remaining API for account %s: %d/%d"
+msgstr ""
+
+#: wpdt.class.php:280 wpdt.class.php:457
+msgid "Send Tweet"
+msgstr ""
+
+#: wpdt.class.php:325
+msgid "How many items?"
+msgstr ""
+
+#: wpdt.class.php:334
+msgid "Tab to open by default"
+msgstr ""
+
+#: wpdt.class.php:347
+msgid "Show Avatars?"
+msgstr ""
+
+#: wpdt.class.php:356
+msgid "Make the Dashboard Widget accessible for everyone?"
+msgstr ""
+
+#: wpdt.class.php:398
+#, php-format
+msgid "Hello %s"
+msgstr ""
+
+#: wpdt.class.php:398
+#, php-format
+msgid "You have %d followers"
+msgstr ""
+
+#: wpdt.class.php:398
+#, php-format
+msgid "You wrote %d statuses so far and are listed on %d Twitter lists"
+msgstr ""
+
+#: wpdt.class.php:413
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: wpdt.class.php:456
+msgid "An empty tweet would not make sense, eh?"
+msgstr ""
+
+#: wpdt.class.php:458
+msgid "Send Direct Message"
+msgstr ""
+
+#: wpdt.class.php:459
+msgid "Verify Credentials"
+msgstr ""
+
+#: wpdt.class.php:460
+msgid "Sending..."
+msgstr ""
+
+#: wpdt.class.php:461
+msgid "Please enter a long URL!"
+msgstr ""
+
+#: wpdt.class.php:492
+msgid "WordPress Dashboard Twitter requires at least WordPress 2.7!"
+msgstr ""
+
+#: wpdt.class.php:506
+msgid "WordPress Dashboard Twitter requires at least PHP5!"
+msgstr ""
+
+#: inc/wpdt.func.php:36
+msgid "No mentions!"
+msgstr ""
+
+#: inc/wpdt.func.php:47 inc/wpdt.func.php:103
+msgid "From"
+msgstr ""
+
+#: inc/wpdt.func.php:47 inc/wpdt.func.php:103
+msgid "Reply to a user"
+msgstr ""
+
+#: inc/wpdt.func.php:47 inc/wpdt.func.php:103
+msgid "Reply"
+msgstr ""
+
+#: inc/wpdt.func.php:47 inc/wpdt.func.php:103 inc/wpdt.func.php:103
+msgid "Retweet this message"
+msgstr ""
+
+#: inc/wpdt.func.php:52 inc/wpdt.func.php:115
+msgid "in reply to"
+msgstr ""
+
+#: inc/wpdt.func.php:92
+msgid "No statuses!"
+msgstr ""
+
+#: inc/wpdt.func.php:155
+msgid "No favorites!"
+msgstr ""
+
+#: inc/wpdt.func.php:167
+#, php-format
+msgid "Liked %d time"
+msgid_plural "Liked %d times"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/wpdt.func.php:216
+msgid "No retweets of your statuses yet!"
+msgstr ""
+
+#: inc/wpdt.func.php:225
+#, php-format
+msgid "Retweeted %d time"
+msgid_plural "Retweeted %d times"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Name of the plugin
+msgid "WordPress Dashboard Tweeter"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"<strong>WordPress 2.7+ only.</strong> Display Twitter @replies, direct "
+"messages, sent messages, favorites and send tweets and direct messages the "
+"convenient way within your WordPress Dashboard."
+msgstr ""
+
+#. URI of the plugin
+msgid "https://wordpress.org/plugins/wordpress-dashboard-twitter/"
+msgstr ""
+
+#. Author of the plugin
+msgid "Oliver Schl&ouml;be &amp; Robert Pfotenhauer"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wordpress.org/extend/plugins/wordpress-dashboard-twitter/"
+msgstr ""
