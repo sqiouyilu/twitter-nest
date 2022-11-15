@@ -1,0 +1,275 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Dashboard Twitter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: wolforg <contact@wolforg.eu>\n"
+"Language-Team: Wolforg <contact@wolforg.eu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2;plural=n>2\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:47
+#: inc/wpdt.func.php:99
+#: inc/wpdt.func.php:149
+msgid "From"
+msgstr "De"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:53
+msgid "in reply to"
+msgstr "en réponse à"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:91
+msgid "No direct messages!"
+msgstr "0 messages directs!"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:141
+msgid "No sent messages!"
+msgstr "0 messages envoyés!"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:151
+msgid "to"
+msgstr "pour"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:192
+msgid "No favorites!"
+msgstr "0 favoris!"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:212
+msgid "WordPress Dashboard Twitter"
+msgstr "WordPress Dashboard Twitter"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:244
+msgid "Please enter your Twitter username and password by clicking the widget's 'configure' link!"
+msgstr "Entrez vos nom d'utilisateur et mot de passe Twitter en cliquant sur le lien 'configurer' du widget!"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:258
+#: wp-dashboard-twitter.php:362
+msgid "Mentions"
+msgstr "Messages vous mentionnant"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:259
+#: wp-dashboard-twitter.php:363
+msgid "Direct"
+msgstr "Messages Directs Recus"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:260
+#: wp-dashboard-twitter.php:364
+msgid "Sent"
+msgstr "Vos Tweets Envoyés"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:261
+#: wp-dashboard-twitter.php:365
+msgid "Favorites"
+msgstr "Favoris"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:267
+#: wp-dashboard-twitter.php:274
+#: wp-dashboard-twitter.php:281
+#: wp-dashboard-twitter.php:288
+msgid "Reload"
+msgstr "Recharger"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:435
+#, php-format
+msgid "%s ago"
+msgstr "il y a %s"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:344
+msgid "Twitter Username"
+msgstr "Nom d'utilisateur Twitter"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:348
+msgid "Twitter Password"
+msgstr "Mot de passe Twitter"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:352
+msgid "How many items?"
+msgstr "Combien d'éléments?"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:377
+msgid "Show Avatars?"
+msgstr "Afficher les avatars?"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:513
+msgid "WordPress Dashboard Twitter requires at least WordPress 2.7!"
+msgstr "WordPress Dashboard Twitter nécessite au minimum WordPress 2.7!"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:526
+msgid "WordPress Dashboard Twitter requires at least PHP5!"
+msgstr "WordPress Dashboard Twitter nécessite au minimum PHP5!"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:32
+msgid "No mentions!"
+msgstr "0 mentions!"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:246
+msgid "<strong>NOTE:</strong> The Twitter API only allows clients to make a limited number of calls in a given period. You just exceeded the rate limit."
+msgstr "<strong>NOTE:</strong> L'API Twitter autorise uniquement les clients à effectuer un nombre limité d'appels pendant une période définie. Vous avez juste dépassé cette limite."
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:49
+#: inc/wpdt.func.php:101
+msgid "Reply"
+msgstr "Répondre"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:360
+msgid "Tab to open by default"
+msgstr "Onglet à ouvrir par défaut"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:420
+#, php-format
+msgid "Hello %s"
+msgstr "Bonjour %s"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:420
+#, php-format
+msgid "You have %d followers"
+msgstr "Vous avez %d personnes qui vous suivent"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:267
+#: wp-dashboard-twitter.php:274
+#: wp-dashboard-twitter.php:281
+#: wp-dashboard-twitter.php:288
+msgid "Update Status"
+msgstr "Mises à jour de statut"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:303
+#: wp-dashboard-twitter.php:479
+msgid "Send Update"
+msgstr "Envoyer mise à jour"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:303
+msgid "Cancel"
+msgstr "Annuler"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:203
+#, php-format
+msgid "By %s"
+msgstr "Par %s"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:294
+msgid "Shorten URL"
+msgstr "URL raccourcie"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:478
+msgid "An empty tweet would not make sense, eh?"
+msgstr "Un message vide n'a aucun sens, non?"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:482
+msgid "Please enter a long URL!"
+msgstr "Entrer une URL longue, svp!"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:49
+msgid "Reply to a user"
+msgstr "Répondre à un utilisateur"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:101
+#, php-format
+msgid "Compose a new Direct Message to %s"
+msgstr "Composez un nouveau message direct pour %s"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:296
+msgid "Upload &amp; Shorten Image"
+msgstr "Envoyer &amp; Image Courte"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:381
+msgid "Use Twitpic to share photos on Twitter?"
+msgstr "Utiliser Twitpic pour partager les photos sur Twitter?"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:480
+msgid "Send Direct Message"
+msgstr "Envoyer Message Direct"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:483
+msgid "Invalid file extension!"
+msgstr "Extension de fichier non valide!"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:481
+msgid "Sending..."
+msgstr "Envoi..."
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:267
+#: wp-dashboard-twitter.php:274
+#: wp-dashboard-twitter.php:281
+#: wp-dashboard-twitter.php:288
+#, php-format
+msgid "Remaining API for account %s: %d/%d"
+msgstr "API restante pour le compte %s: %d/%d"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:49
+msgid "Retweet this message"
+msgstr "Retweeter ce message"
+
+# @ wp-dashboard-twitter
+#: inc/wpdt.func.php:49
+msgid "Retweet"
+msgstr "Retweeter"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:240
+#, php-format
+msgid "The following directory needs to be writable: %s [<a href='%s'>Recheck</a>]"
+msgstr "Le répertoire suivant doit être accessible en écriture %s [<a href='%s'>Vérifier à nouveau</a>]"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:369
+msgid "URL Shortener"
+msgstr "Raccourcisseur d'URL"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:371
+msgid "wp.gd"
+msgstr "wp.gd"
+
+# @ wp-dashboard-twitter
+#: wp-dashboard-twitter.php:372
+msgid "tr.im"
+msgstr "tr.im"
+

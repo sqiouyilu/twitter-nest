@@ -1,5 +1,11 @@
 # twitter-nest
-Tools for creating a decentralized Twitter clone on WordPress.
+Tools for creating a decentralized Twitter clone on WordPress. 
+
+- Tweet without using the Twitter interface.
+- Automatically back up new tweets to WordPress. (requires developer account)
+- Import your tweet archive.
+
+So long as the Twitter API is still working, you can tweet regardless of how the official website and app are functioning.
 
 Live demo: https://s.qiouyi.lu/tweets
 
@@ -11,78 +17,25 @@ Live demo: https://s.qiouyi.lu/tweets
 
 Perl command line script to convert tweets.js from a downloaded Twitter archive to a CSV that can be imported to WordPress with a CSV import plugin.
 
+### <a href="https://github.com/ozh/ozh-tweet-archiver">ozh/ozh-tweet-archiver</a>
+
+Plugin to automatically archive tweets to WordPress. Requires developer account.
+
+### <a href="https://github.com/ozh/ozh-tweet-archiver-theme">ozh/ozh-tweet-archiver-theme</a>
+
+Theme to display tweets.
+
+### <a href="https://wordpress.org/plugins/wordpress-dashboard-twitter/">wordpress-dashboard-twitter</a>
+
+Backend interface for tweeting from WordPress. Uses OAuth login.
+
 ----
 
 ## Tools in development
 
-*Key:*<br />
-⭕️ not yet started<br />
-🟡 in progress<br />
-✅ done<br />
+### glitch.me interface for tweet archive converter
 
-### Instructions and documentation
-
-⭕️ installing a fresh WordPress for nest
-
-⭕️ signing up for Twitter developer account if you want automated backups
-
-⭕️ installing necessary WordPress plugins
-
-⭕️ installing and modding theme
-
-⭕️ how to run script to convert archive to CSV
-
-⭕️ how to import archive to WordPress
-
-⭕️ nest workflow: tweets created from WordPress will not be published to Twitter (would create archive loop), but publishing to Twitter will save back to WordPress
-
-### glitch.me browser app for tweetsJS-to-tweetsCSV.pl
-
-⭕️ create interface on glitch.me so you can convert files without using the command line
-
-⭕️ may need to include file chunking if browser hangs on large archives
-
-⭕️ need to ensure no data is stored on glitch's servers
-
-### Mod of <a href="https://github.com/ozh/ozh-tweet-archiver">ozh/ozh-tweet-archiver</a>
-
-⭕️ add ability to auto-import multimedia—plugin currently hotlinks to Twitter, need a way to make a local backup, ideally include some mechanism to define import size limits and specify which types are downloaded (e.g. exclude video)
-
-⭕️ add flag when tweet data has been edited on WordPress and varies from import, see mastodon implementation suggestion: https://github.com/mastodon/mastodon/issues/981#issuecomment-493412480 (adding "edited on" and timestamp likely sufficient, prefer integrating a diffchecker plugin to make changes readable)
-
-⭕️ integrate WP Twitter Threads unroller https://wordpress.org/plugins/wp-twitter-threads/ (need to verify if thread unrolled within last 3,200 tweets will remain unrolled once it goes past the 3,200 threshold)
-
-### Mod of <a href="https://github.com/ozh/ozh-tweet-archiver-theme">ozh/ozh-tweet-archiver-theme</a>
-
-🟡 rewrite using semantic tags instead of `<div>`s
-
-✅ add Twitter references and tools sidebar
-
-⭕️ rewrite for proper responsiveness
-
-⭕️ add web intents to allow likes & retweets from nest
-
-⭕️ add WordPress customizer GUI support with editable widgets
-
-✅ include page of links to Twitter settings (*demo:* https://s.qiouyi.lu/tweets/settings)
-
-### Mod of wordpress-dashboard-twitter
-
-Not on Github: https://wordpress.org/plugins/wordpress-dashboard-twitter/
-
-⭕️ add support for 280-character tweets
-
-⭕️ add web intents to support liking tweets from dashboard
-
-⭕️ add support for conversational context & threads
-
-⭕️ add infinite scroll or at least increase number of tweets visible on load
-
-### Twitter contact management tool
-
-⭕️ import list of Twitter users as WordPress users
-
-⭕️ use native WordPress user management tools to annotate users and add contact information
+So you don't have to use the command line to convert your archive.
 
 ----
 
