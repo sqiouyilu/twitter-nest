@@ -5,6 +5,8 @@ Description: Ozh' Tweet Archive
 Version: 2.0
 Author: Ozh
 Author URI: http://ozh.org/
+Modified by: S. Qiouyi Lu
+Editor URL: https://s.qiouyi.lu/
 Tags: twitter, tweets, archive
 */
 
@@ -19,7 +21,7 @@ body {
 /* Links
 ----------------------------------------------- */
 a {
-  color:#690000;
+  color:#1DA1F2;
   text-decoration:none;
 }
 a:hover {
@@ -33,7 +35,7 @@ a img {
 /* Structure, basic, unstyled
 ----------------------------------------------- */
 
-#header {
+header {
     background:transparent url(img/1500x500.png) right -100px no-repeat;
     background-size: 100% auto;
     width:100%;
@@ -65,24 +67,24 @@ aside#twitter-tools {
 	width: 220px;
 }
   
-#tweets {
+main {
   margin-left: 260px;
   margin-top: 20px;
 }
 
-#footer {
+#credits {
   margin-left: 260px;
 }
 
 /* Header
 ----------------------------------------------- */
-#header a {
+header a {
     width:100%;
     height:100%;
     display:block;
 }
 
-#header a:hover {
+header a:hover {
     background:none;
 }
 
@@ -115,19 +117,19 @@ aside#twitter-tools {
     display:block;
 }
 
-#stats-header li span.what {
+#stats-header li span.metric {
     text-transform:uppercase;
     font-size:11px;
-    color:#690000;
+    color:#1DA1F2;
     margin-bottom:-3px;
 }
 
-#stats-header li span.much {
+#stats-header li span.statistic {
     text-align:center;
     font-size:16px;
 }
 
-#stats-header li span.much a {
+#stats-header li span.statistic a {
     color: inherit;
     padding: 0 3px;
 }
@@ -160,7 +162,7 @@ aside#twitter-tools {
 #user .avatar {
   width:200px;
   height:200px;
-  background-image: url(https://pbs.twimg.com/profile_images/1587942069074477056/bUgXbLFC_400x400.jpg);
+  background-image: url(img/avatar.jpg);
   background-size: 100% 100%;
   border-radius:125px;
   margin:8px;
@@ -180,13 +182,11 @@ aside#twitter-tools {
 
 #user-info i.fa {
     color:#aaa;
-    width:20px;
+    width:24px;
 }
 
 #user-info li:hover i.fa {
     color:#aaa;
-    width:17px;
-    padding-left:3px;
 }
 
 .user-displayname {
@@ -200,40 +200,40 @@ aside#twitter-tools {
 ----------------------------------------------- */
 
 /* TEMPORARY HACK - FIX FLOAT ISSUE */
-#tweets {
+main {
 	margin-top: -800px;
 }
 
-#tweets h2 {
+main h2 {
   margin:0 0 10px;
   padding-bottom:10px;
   border-bottom:1px solid #ccc;
   font-size:24px;
 }
-#tweets .post {
+main .post {
   margin:40px 0px;
   padding-bottom:10px;
   border-bottom:1px solid #efefef;
 }
-#tweets .post p {
+main .post p {
   margin:0;
 }
-#tweets a {
+main a {
   font-weight:bold;
 }
-#tweets .meta a {
+main .meta a {
   font-weight:normal;
   padding: 0 2px;
 }
-#tweets .post .meta, #tweets .post .meta a {
+main .post .meta, main .post .meta a {
   font-size:12px;
   color:#999;
 }
 .post:hover .meta a {
-  text-decoration:underline;
-}
-#tweets .post .meta a:hover {
   color:#666;
+}
+main .post .meta a:hover {
+  text-decoration:underline;
 }
 
 #stream_toggle {
@@ -265,16 +265,16 @@ aside#twitter-tools {
     font-size:22px;
     line-height:30px;
 }
-body.single #tweets .tweet {
+body.single main .tweet {
   font-size:24px;
   line-height:26px;
 }
-body.single #tweets .post .meta, body.single #tweets .post .meta a {
+body.single main .post .meta, body.single main .post .meta a {
   font-size:15px;
   line-height:26px;
   padding-top:10px;
 }
-#tweets span.embed_image_yes {
+main span.embed_image_yes {
     border: 1px solid #efefef;
     border-radius: 5px;
     display: block;
@@ -282,14 +282,14 @@ body.single #tweets .post .meta, body.single #tweets .post .meta a {
     width: 90%;
     line-height:10px;
 }
-#tweets span.embed_image_yes a:hover {
+main span.embed_image_yes a:hover {
     background:none;
 }
-#tweets span.embed_image_yes img {
+main span.embed_image_yes img {
     border-radius: 5px;
     width: 100%;
 }
-#tweets .link_untco_image {
+main .link_untco_image {
     display:none;
 }
 
@@ -317,11 +317,11 @@ body.single #tweets .post .meta, body.single #tweets .post .meta a {
   color:#333;
 }
 #searchform .btn {
-  background:#690000 url("img/bg-searchbutton.png") no-repeat 55% 100%;
+  background:#1DA1F2 url("img/bg-searchbutton.png") no-repeat 55% 100%;
   width:32px;
   margin:0;
   padding:2px 0;
-  border:1px solid #690000;
+  border:1px solid #1DA1F2;
   border-left-width:0;
   border-top-right-radius:5px;
   border-bottom-right-radius:5px;
@@ -348,7 +348,7 @@ nav h2 {
 	border-top-left-radius:5px;
 	border-top-right-radius:5px;
 	color:#fff;
-	background:#690000;
+	background:#1DA1F2;
     width:210px;
 }
 nav ul {
@@ -452,7 +452,7 @@ nav li.current .count {
     display:block;
 }
 #archives ol li.not_empty:hover {
-   background:#690000;
+   background:#1DA1F2;
 }
 #archives span.label {
     display:block;
@@ -470,7 +470,7 @@ nav li.current .count {
 #archives .archive_year_label {
     font-size:12px;
     font-weight:bold;
-    color:#690000;
+    color:#1DA1F2;
     padding-left:2px;
 }
 #archives .archive_year:hover .archive_year_label {
@@ -482,7 +482,7 @@ nav li.current .count {
 #archives .archive_year:hover .archive_year_count {
     display:inline;
     margin-left:30px;
-    color:#690000;
+    color:#1DA1F2;
 }
 
 /* Misc
@@ -491,7 +491,7 @@ nav li.current .count {
   margin-top:30px;
 }
 .pagination a {
-  color: #690000;
+  color: #1DA1F2;
 }
 .pagination .older {
   float:left;
@@ -512,16 +512,16 @@ nav li.current .count {
 
 /* Footer
 ----------------------------------------------- */
-#footer p {
+#credits p {
   padding:10px 0;
   color:#999;
   font-size:12px;
 }
-#footer a {
+#credits a {
   color:#666;
 }
 
-/* Responsive shit
+/* Responsive adjustments
 ----------------------------------------------- */
 
 #tiny-name {display:none;}
@@ -535,12 +535,12 @@ nav li.current .count {
   #tiny-name {display:block; font-size: 20px; padding: 10px 0 0;}
   #stats-header li {margin-left:0px}
   #searchform {visibility:hidden;}
-  #tweets, #footer {margin-left:10px;}
+  main, #footer {margin-left:10px;}
   #stats-header {padding:1px 0 0 10px;}
 }
 
 @media all and (max-width: 600px) {
   aside { display:none;}
-  #tweets, #footer {margin-right:10px;}
+  main, #footer {margin-right:10px;}
   #content {width:100%}
 }
