@@ -1,8 +1,8 @@
-<div id="sidebar">
+<aside id="stats-sidebar">
 
 <?php get_search_form(); ?>
 
-  <div id="nav">
+  <nav>
   
     <h2><i class="fa fa-calendar"></i> Archives</h2>
 	<?php /**/ ?>
@@ -27,18 +27,16 @@
 	<h2><i class="fa fa-tags"></i> #hashtags</h2>
 	<?php wp_tag_cloud('format=list'); ?>
 	
-	<h2><i class="fa fa-info-circle"></i> Bleh</h2>
-	<ul id="bleh" class="block">
+	<h2><i class="fa fa-info-circle"></i> Meta</h2>
+	<ul id="meta" class="block">
 	<li>Tweets archive every <span class="count"><?php global $ozh_ta; echo ozh_ta_seconds_to_words( $ozh_ta['refresh_interval'] ); ?></span></li>
 	<li>Next update in <span class="count"><?php echo ozh_ta_next_update_in( true, false ); ?></span></li>
-	<li><a href="<?php bloginfo('url'); ?>/wp-admin/">Admin</a></li>
-	<li><?php wp_loginout(); ?></li>
+	<li><a href="/tweets/settings/">Twitter settings</a></li>
 	</ul>
 
 
   <?php //endif; // no dynamic sidebar?>
 	
-  </div>
+  </nav>
 
-</div>
-
+</aside>
