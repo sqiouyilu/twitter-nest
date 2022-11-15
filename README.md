@@ -5,9 +5,11 @@ Tools for creating a decentralized Twitter clone on WordPress.
 - Automatically back up new tweets to WordPress. (requires developer account)
 - Import your tweet archive.
 
-So long as the Twitter API is still working, you can tweet regardless of how the official website and app are functioning.
+So long as the Twitter API is still working, you can tweet regardless of how the official website and app are functioning. Even if the API goes down, you can maintain an archive of your tweets and use the WordPress interface to add to it locally.
 
 Live demo: https://s.qiouyi.lu/tweets
+
+Feature development map: https://github.com/sqiouyilu/twitter-nest/wiki/Feature-development-roadmap
 
 ----
 
