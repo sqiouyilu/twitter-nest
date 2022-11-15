@@ -189,7 +189,7 @@ aside#twitter-tools {
     padding-left:3px;
 }
 
-.user-realname {
+.user-displayname {
   font-size:24px;
   font-weight:bolder;
   color:#111;
@@ -427,7 +427,7 @@ nav li.current .count {
     background:#ccc;
 }
 #archives ol li.empty {
-    background:rgba(246, 248, 231, 0.5);
+    background:rgba(0, 0, 0, 0.03);
 }
 #archives ol li a {
     display:inline-block;
