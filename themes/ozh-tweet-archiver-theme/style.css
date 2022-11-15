@@ -19,12 +19,10 @@ body {
 /* Links
 ----------------------------------------------- */
 a {
-  color:#08b;
+  color:#690000;
   text-decoration:none;
 }
 a:hover {
-  background:#E4F2FD;
-  color:#069;
   text-decoration:underline;
 }
 a img {
@@ -55,11 +53,16 @@ a img {
   border-radius:5px;
 }
 
-#sidebar {
+aside#stats-sidebar {
   float:right;
   width:220px;
   margin-top:-140px;
   margin-right:10px;
+}
+
+aside#twitter-tools {
+	clear:both;
+	width: 220px;
 }
   
 #tweets {
@@ -87,11 +90,9 @@ a img {
 ----------------------------------------------- */
 #stats-wrap {
   width:100%;
-  border-bottom:1px solid #44A340;
-  background:#EEF2D6;
-  background:rgba(239, 242, 214, 0.55);
+  border-bottom:1px solid #999;
+  background:#efefef;
   height:45px;
-  box-shadow:0 0px 2px rgba(0, 0, 0, 0) inset, 0 0px 1px rgba(0, 0, 0, 0.8) inset;
   overflow:hidden;
 }
 
@@ -117,7 +118,7 @@ a img {
 #stats-header li span.what {
     text-transform:uppercase;
     font-size:11px;
-    color:#1E6823;
+    color:#690000;
     margin-bottom:-3px;
 }
 
@@ -151,31 +152,17 @@ a img {
 
 #user-pic {
     background:white;
-    border-radius:10px;
+    border-radius:125px;
     box-shadow:0 1px 1px rgba(136, 153, 166, 0.35);
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.4s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.4s;
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
     overflow:hidden;
-}
- 
-#user-pic:hover {
-    -webkit-transform:rotate(-4deg);
-    -moz-transform:rotate(-4deg);
-    -o-transform:rotate(-4deg);
 }
 
 #user .avatar {
   width:200px;
   height:200px;
-  background-image: url(img/new-profile.jpg);
+  background-image: url(https://pbs.twimg.com/profile_images/1587942069074477056/bUgXbLFC_400x400.jpg);
   background-size: 100% 100%;
-  border-radius:10px;
+  border-radius:125px;
   margin:8px;
   padding:8px;
   display:block;
@@ -211,16 +198,22 @@ a img {
 
 /* Tweets
 ----------------------------------------------- */
+
+/* TEMPORARY HACK - FIX FLOAT ISSUE */
+#tweets {
+	margin-top: -800px;
+}
+
 #tweets h2 {
   margin:0 0 10px;
   padding-bottom:10px;
-  border-bottom:1px solid #44A340;
+  border-bottom:1px solid #ccc;
   font-size:24px;
 }
 #tweets .post {
   margin:40px 0px;
   padding-bottom:10px;
-  border-bottom:1px solid #D6E685;
+  border-bottom:1px solid #efefef;
 }
 #tweets .post p {
   margin:0;
@@ -244,7 +237,7 @@ a img {
 }
 
 #stream_toggle {
-  border-bottom:1px solid #D6E685;
+  border-bottom:1px solid #efefef;
   margin-left:260px;
 }
 #stream_toggle ul {
@@ -282,7 +275,7 @@ body.single #tweets .post .meta, body.single #tweets .post .meta a {
   padding-top:10px;
 }
 #tweets span.embed_image_yes {
-    border: 1px solid #8CC665;
+    border: 1px solid #efefef;
     border-radius: 5px;
     display: block;
     padding: 3px;
@@ -324,11 +317,11 @@ body.single #tweets .post .meta, body.single #tweets .post .meta a {
   color:#333;
 }
 #searchform .btn {
-  background:#1E6823 url("img/bg-searchbutton.png") no-repeat 55% 100%;
+  background:#690000 url("img/bg-searchbutton.png") no-repeat 55% 100%;
   width:32px;
   margin:0;
   padding:2px 0;
-  border:1px solid #367;
+  border:1px solid #690000;
   border-left-width:0;
   border-top-right-radius:5px;
   border-bottom-right-radius:5px;
@@ -336,17 +329,17 @@ body.single #tweets .post .meta, body.single #tweets .post .meta a {
 }
 
 #searchform:hover .btn {
-  background-color:#8CC665;
+  background-color:#333;
 }
 
 /* Nav
 ----------------------------------------------- */
-#nav {
+nav {
 	padding:0 0 20px;
 	border-radius:5px;
 	font-size:13px;
 }
-#nav h2 {
+nav h2 {
 	margin:0;
 	font-size:15px;
     line-height:29px;
@@ -355,45 +348,45 @@ body.single #tweets .post .meta, body.single #tweets .post .meta a {
 	border-top-left-radius:5px;
 	border-top-right-radius:5px;
 	color:#fff;
-	background:#1E6823;
+	background:#690000;
     width:210px;
 }
-#nav ul {
+nav ul {
 	margin:0;
 	padding:0;
 	list-style:none;
 	overflow:hidden;
 	width:100%;
 }
-#nav li {
+nav li {
 	margin:0px;
 	padding:0;
 }
-#nav li a , #nav ul.block li {
+nav li a , nav ul.block li {
 	display:block;
 	padding:1px 4px 1px 10px;
 	border-radius:5px;
 	color:#666;
 	font-size:13px;
 }
-#nav ul.block li a {
+nav ul.block li a {
 	padding:0;
 }
-#nav .wp-tag-cloud li a, #nav .wp-tag-cloud li {
+nav .wp-tag-cloud li a, nav .wp-tag-cloud li {
 	display:inline; float:left; width:auto;
     padding:0px 3px;
 }
-#nav li a:hover, #nav li.current a, #nav li.current a:hover, #nav ul.block li.current, #nav ul.block li:hover {
-  background:#E4F2FD;
+nav li a:hover, nav li.current a, nav li.current a:hover, nav ul.block li.current, nav ul.block li:hover {
+  background:#efefef;
   text-decoration:none;
 }
-#nav li.current a {
+nav li.current a {
   font-weight:bold;
 }
-#nav li a:hover {
-  background:#D6E685;
+nav li a:hover {
+  background:#efefef;
 }
-#nav li .count {
+nav li .count {
   background:rgba(255,255,255,0.5);
   float:right;
   line-height:14px;
@@ -403,10 +396,10 @@ body.single #tweets .post .meta, body.single #tweets .post .meta a {
   font-size:11px;
   border-radius:3px;
 }
-#nav li.current a {
+nav li.current a {
   color:#333;
 }
-#nav li.current .count {
+nav li.current .count {
   background:rgba(0,0,0,0.6);
   color:#fff;
   font-weight:normal;
@@ -431,7 +424,7 @@ body.single #tweets .post .meta, body.single #tweets .post .meta a {
     height:30px;
     border:1px solid white;
     margin-left:1px;
-    background:#D6E685;
+    background:#ccc;
 }
 #archives ol li.empty {
     background:rgba(246, 248, 231, 0.5);
@@ -459,7 +452,7 @@ body.single #tweets .post .meta, body.single #tweets .post .meta a {
     display:block;
 }
 #archives ol li.not_empty:hover {
-   background:#44A340;
+   background:#690000;
 }
 #archives span.label {
     display:block;
@@ -477,7 +470,7 @@ body.single #tweets .post .meta, body.single #tweets .post .meta a {
 #archives .archive_year_label {
     font-size:12px;
     font-weight:bold;
-    color:#1E6823;
+    color:#690000;
     padding-left:2px;
 }
 #archives .archive_year:hover .archive_year_label {
@@ -489,7 +482,7 @@ body.single #tweets .post .meta, body.single #tweets .post .meta a {
 #archives .archive_year:hover .archive_year_count {
     display:inline;
     margin-left:30px;
-    color:#8CC665;
+    color:#690000;
 }
 
 /* Misc
@@ -498,7 +491,7 @@ body.single #tweets .post .meta, body.single #tweets .post .meta a {
   margin-top:30px;
 }
 .pagination a {
-  color: rgba(0, 125, 203, 0.57);
+  color: #690000;
 }
 .pagination .older {
   float:left;
@@ -547,7 +540,7 @@ body.single #tweets .post .meta, body.single #tweets .post .meta a {
 }
 
 @media all and (max-width: 600px) {
-  #sidebar { display:none;}
+  aside { display:none;}
   #tweets, #footer {margin-right:10px;}
   #content {width:100%}
 }
