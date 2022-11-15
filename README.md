@@ -19,10 +19,6 @@ The Twitter archiver plugin can only access your 3,200 most recent tweets for an
 
 ## Available tools
 
-### tweetsJS-to-tweetsCSV.pl
-
-Perl command line script to convert tweets.js from a downloaded Twitter archive to a CSV that can be imported to WordPress with a CSV import plugin.
-
 ### <a href="https://github.com/ozh/ozh-tweet-archiver">ozh/ozh-tweet-archiver</a>
 
 Plugin to automatically archive tweets to WordPress. Requires developer account.
@@ -39,6 +35,10 @@ Backend interface for tweeting from WordPress. Uses OAuth login.
 
 Local copy of Twitter settings menu. The links take you back to the Twitter website to manage account settings.
 
+### tweetsJS-to-tweetsCSV.pl
+
+Perl command line script to convert tweets.js from a downloaded Twitter archive to a CSV that can be imported to WordPress with a CSV import plugin.
+
 ----
 
 ## Additional tools needed
@@ -51,13 +51,13 @@ Needed to import a downloaded archive. Several are available. <a href="https://w
 
 ## Tools in development
 
-### glitch.me interface for tweet archive converter
-
-So you don't have to use the command line to convert your archive.
-
 ### Twitter contact manager
 
 Tool to import Twitter follows as WordPress users so you can annotate entries and attach contact information.
+
+### glitch.me interface for tweet archive converter
+
+So you don't have to use the command line to convert your archive.
 
 ----
 
