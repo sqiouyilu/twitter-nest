@@ -6,13 +6,12 @@
 
 <span class="reset">&nbsp;</span>
 
-<div id="footer">
+<footer id="credits">
   <p>Powered by
-  <a href="http://wordpress.org/"><i class="fa fa-hand-o-right"></i> WordPress</a>
-  with <a href="http://planetozh.com/blog/my-projects/ozh-tweet-archiver-backup-twitter-with-wordpress/"><i class="fa fa-hand-o-right"></i> Ozh' Tweet Archiver</a>.
-  and <a href="http://planetozh.com/blog/my-projects/ozh-tweet-archive-theme-for-wordpress/"><i class="fa fa-hand-o-right"></i> Ozh' Tweet Archive Theme</a>.
+  <a href="http://wordpress.org/"><i class="fa fa-wordpress"></i> WordPress</a>
+  and <a href="https://github.com/sqiouyilu/twitter-nest"><i class="fa fa-house-signal"></i> Twitter Nest</a>.
   <?php echo get_num_queries(); ?> queries in <?php timer_stop(true,2); ?> seconds.</p>
-</div>
+</footer>
 <?php wp_footer(); ?>
 
 </div>
