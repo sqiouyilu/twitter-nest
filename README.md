@@ -27,7 +27,7 @@ The Twitter archiver plugin can only access your 3,200 most recent tweets for an
 ### Website hosting and domain name
 
 - Space to store your tweets and an address for your space. 
-- **Beginner's guide:** [Launchpad Themes # Why have a website?](https://s.qiouyi.lu/resources/launchpad-themes/)
+- **Beginner's guide:** [Launchpad Themes # Why have a website?](https://s.qiouyi.lu/resources/launchpad-themes/#why-have-a-website)
 
 ### Self-hosted WordPress
 
