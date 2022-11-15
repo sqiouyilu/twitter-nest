@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php wp_title('|', true, 'right'); ?> <?php bloginfo('name'); ?></title>
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/fontawesome-free-6.2.0.min.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" type="text/css" media="screen" />
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -38,7 +38,7 @@
     <section id="user-info">
         <ul>
             <li class="user-displayname">DISPLAY NAME</li>
-            <li class="username"><i class="fa fa-twitter"></i>@<a href="https://twitter.com/USERNAME">USERNAME</a></li>
+            <li class="username"><i class="fa-brands fa-twitter"></i>@<a href="https://twitter.com/USERNAME">USERNAME</a></li>
             <li class="user-loc"><i class="fa fa-map-marker"></i>LOCATION</li>
 
 <!-- Font Awesome icon reference for customizing URL badges: https://fontawesome.com/icons -->
