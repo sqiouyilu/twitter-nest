@@ -5,13 +5,15 @@ Tools for creating a decentralized Twitter clone on WordPress.
 - Automatically back up new tweets to WordPress. (requires <a href="https://developer.twitter.com/">developer account</a>)
 - Import your tweet archive.
 
-So long as the Twitter API is still working, you can tweet regardless of how the official website and app are functioning. Even if the API goes down, you can maintain an archive of your tweets and use the WordPress interface to add to it locally.
+So long as the Twitter API is still working, you can tweet regardless of how the official website and app are functioning. 
+
+Even if the API goes down, you can maintain an archive of your tweets and use the WordPress interface to add to it locally.
 
 The Twitter archiver plugin can only access your 3,200 most recent tweets for an initial import. You will need to <a href="https://help.twitter.com/en/managing-your-account/how-to-download-your-twitter-archive" target="_new">download your archive from Twitter</a> if you want to restore older tweets.
 
-Live demo: https://s.qiouyi.lu/tweets
+**Live demo:** https://s.qiouyi.lu/tweets
 
-Feature development roadmap: https://github.com/sqiouyilu/twitter-nest/wiki/Feature-development-roadmap
+**Feature development roadmap:** https://github.com/sqiouyilu/twitter-nest/wiki/Feature-development-roadmap
 
 ----
 
@@ -63,7 +65,7 @@ Site: <a href="https://s.qiouyi.lu/" target="_new">s.qiouyi.lu</a><br />
 Email: <a href="mailto:s@qiouyi.lu">s@qiouyi.lu</a><br />
 Twitter: <a href="https://twitter.com/sqiouyilu" target="_new">@sqiouyilu</a>
 
-*Tip Jars*
+**Tip Jars**
 
 Direct: https://s.qiouyi.lu/shop/tip-jar/<br />
 PayPal: https://paypal.me/sqiouyilu<br />
