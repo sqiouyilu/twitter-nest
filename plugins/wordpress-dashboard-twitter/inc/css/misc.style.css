@@ -1,0 +1,151 @@
+.wpdt-container ul {
+	line-height: 1;
+}
+
+.wpdt-container ul li {
+	line-height: 1;
+	clear: both;
+}
+
+.wpdt-container ul li::after {
+	display: block;
+	content: "";
+	-webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,.06);
+	box-shadow: inset 0 1px 0 rgba(0,0,0,.06);
+	margin: 15px -1.0em;
+	height: 2px;
+}
+
+.wpdt-sender {
+	font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 1.1;
+	padding: 0;
+	margin: 0;
+	color: #999;
+	margin-top: -0.2em;
+}
+
+.wpdt-sender img {
+	vertical-align: bottom;
+}
+
+blockquote.wpdt-text {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	line-height: 140%;
+}
+
+blockquote.wpdt-text p {
+	margin: 0;
+	padding: 0;
+	padding: 1px 0;
+	color: #444;
+}
+
+.wpdt-meta {
+	margin: 5px 0 0;
+	font-size: 0.8em;
+	font-style: italic;
+	float: right;
+	clear: left;
+	color: #999;
+	opacity: 0.7;
+}
+
+#twitterbird {
+	position: relative;
+	float: right;
+	padding-right: 10px;
+	padding-top: 16px;
+	z-index: 50;
+}
+
+#wp_dashboard_twitter a.button, #wp_dashboard_twitter a.button-primary, #wp_dashboard_twitter a.button-secondary {
+	line-height: 1.4em;
+}
+
+#wp_dashboard_twitter span.error {
+	display: block;
+	padding: 3px;
+	font-size: 0.8em;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+#wp_dashboard_twitter .avatar {
+	float: left;
+	width: 55px;
+}
+
+#wp_dashboard_twitter .avatar img {
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+#wp_dashboard_twitter .account-info {
+	color: #777777;
+	font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+	font-size: 13px;
+	font-style: italic;
+	padding: 5px 13px 15px;
+	margin: -12px;
+}
+
+#wp_dashboard_twitter .account-info strong {
+	font-weight: 200;
+	color: #232323;
+}
+
+#wp_dashboard_twitter p.row-actions {
+	margin: 0;
+	font-size: smaller;
+}
+
+#wp_dashboard_twitter a.meta-delete {
+	color: #BC0B0B;
+}
+
+#wp_dashboard_twitter a:hover.meta-delete {
+	color: #F00;
+}
+
+#wp_dashboard_twitter #wpdt-update-wrapper {
+	margin-top: 10px;
+	font-size: 11px;
+}
+
+#wp_dashboard_twitter .wpdt-toolbar #wpdt-charcount {
+	font-weight: 700;
+	text-align: right;
+	float: right;
+	width: 70px;
+}
+
+#wp_dashboard_twitter .wpdt-counter-ok {
+	color: #090;
+}
+
+#wp_dashboard_twitter .wpdt-counter-warning {
+	color: #C7991F;
+}
+
+#wp_dashboard_twitter .wpdt-counter-error {
+	color: #e00;
+}
+
+#wp_dashboard_twitter #wpdt-shorten-url-toolbar {
+	float: left;
+}
+
+#wp_dashboard_twitter #wpdt-long-url {
+	font-size: 11px;
+	padding: 1px;
+	width: 40%;
+}
+
+#wpdt-btn-shorten-url {
+	position: relative;
+}
