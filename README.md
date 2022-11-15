@@ -11,7 +11,7 @@ The Twitter archiver plugin can only access your 3,200 most recent tweets for an
 
 Live demo: https://s.qiouyi.lu/tweets
 
-Feature development map: https://github.com/sqiouyilu/twitter-nest/wiki/Feature-development-roadmap
+Feature development roadmap: https://github.com/sqiouyilu/twitter-nest/wiki/Feature-development-roadmap
 
 ----
 
@@ -48,6 +48,10 @@ Needed to import a downloaded archive. Several are available. <a href="https://w
 ### glitch.me interface for tweet archive converter
 
 So you don't have to use the command line to convert your archive.
+
+### Twitter contact manager
+
+Tool to import Twitter follows as WordPress users so you can annotate entries and attach contact information.
 
 ----
 
