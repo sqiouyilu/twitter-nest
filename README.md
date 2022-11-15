@@ -7,6 +7,8 @@ Tools for creating a decentralized Twitter clone on WordPress.
 
 So long as the Twitter API is still working, you can tweet regardless of how the official website and app are functioning. Even if the API goes down, you can maintain an archive of your tweets and use the WordPress interface to add to it locally.
 
+The Twitter archiver plugin can only access your 3,200 most recent tweets for an initial import. You will need to <a href="https://help.twitter.com/en/managing-your-account/how-to-download-your-twitter-archive" target="_new">download your archive from Twitter</a> if you want to restore older tweets.
+
 Live demo: https://s.qiouyi.lu/tweets
 
 Feature development map: https://github.com/sqiouyilu/twitter-nest/wiki/Feature-development-roadmap
@@ -30,6 +32,14 @@ Theme to display tweets.
 ### <a href="https://wordpress.org/plugins/wordpress-dashboard-twitter/">wordpress-dashboard-twitter</a>
 
 Backend interface for tweeting from WordPress. Uses OAuth login.
+
+----
+
+## Additional tools needed
+
+### CSV importer for WordPress
+
+Needed to import a downloaded archive. Several are available. <a href="https://wordpress.org/plugins/tags/csv/">Select one that meets your needs from the WordPress plugins repository.</a>
 
 ----
 
