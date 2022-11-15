@@ -38,6 +38,7 @@ Perl command line script to convert tweets.js from a downloaded Twitter archive 
 
 ### Fork of <a href="https://github.com/ozh/ozh-tweet-archiver">ozh/ozh-tweet-archiver</a>
 
+⭕️ add ability to auto-import multimedia—plugin currently hotlinks to Twitter, need a way to make a local backup, ideally include some mechanism to define import size limits and specify which types are downloaded (e.g. exclude video)
 ⭕️ add flag when tweet data has been edited on WordPress and varies from import, see mastodon implementation suggestion: https://github.com/mastodon/mastodon/issues/981#issuecomment-493412480 (adding "edited on" and timestamp likely sufficient, prefer integrating a diffchecker plugin to make changes readable)<br />
 ⭕️ integrate WP Twitter Threads unroller https://wordpress.org/plugins/wp-twitter-threads/ (need to verify if thread unrolled within last 3,200 tweets will remain unrolled once it goes past the 3,200 threshold)
 
