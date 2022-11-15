@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php wp_title('|', true, 'right'); ?> <?php bloginfo('name'); ?></title>
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/font-awesome.min.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/fontawesome-free-6.2.0.min.css" type="text/css" media="screen" />
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
