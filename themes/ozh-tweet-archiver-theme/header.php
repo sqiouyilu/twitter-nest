@@ -15,11 +15,11 @@
 
 <div id="stats-wrap">
     <ul id="stats-header">
-        <li id="tiny-name">Ozh <a href="https://twitter.com/ozh">@ozh</a></li>
+        <li id="tiny-name">DISPLAY NAME <a href="https://twitter.com/USERNAME">@USERNAME</a></li>
         <li><span class="what">tweets</span><span class="much"><?php do_action('ozh_ta_total_tweets'); ?></span></li>
-        <li><span class="what">following</span><span class="much"><?php do_action('ozh_ta_total_following'); ?> <a href="https://twitter.com/ozh/following"><i class="fa fa-caret-right"></i></a></span></li>
-        <li><span class="what">followers</span><span class="much"><?php do_action('ozh_ta_total_followers'); ?> <a href="https://twitter.com/ozh/followers"><i class="fa fa-caret-right"></i></a></span></li>
-        <li><span class="what">listed</span><span class="much"><?php do_action('ozh_ta_total_listed'); ?> <a href="https://twitter.com/ozh/memberships"><i class="fa fa-caret-right"></i></a></span></li>
+        <li><span class="what">following</span><span class="much"><?php do_action('ozh_ta_total_following'); ?> <a href="https://twitter.com/USERNAME/following"><i class="fa fa-caret-right"></i></a></span></li>
+        <li><span class="what">followers</span><span class="much"><?php do_action('ozh_ta_total_followers'); ?> <a href="https://twitter.com/USERNAME/followers"><i class="fa fa-caret-right"></i></a></span></li>
+        <li><span class="what">listed</span><span class="much"><?php do_action('ozh_ta_total_listed'); ?> <a href="https://twitter.com/USERNAME/memberships"><i class="fa fa-caret-right"></i></a></span></li>
     </ul>
 </div>
 
@@ -32,22 +32,49 @@
 <!-- !BEGIN #user -->
 <div id="user">
     <div id="user-pic">
-        <a href="https://twitter.com/ozh" class="avatar"></a>
+        <a href="SET TO WORDPRESS URL OR TWITTER PROFILE" class="avatar"></a>
     </div>
     <div id="user-info">
         <ul>
-            <li class="user-realname">Ozh RICHARD</li>
-            <li class="username"><i class="fa fa-twitter"></i>@<a href="https://twitter.com/ozh">ozh</a></li>
-            <li class="username"><i class="fa fa-github-alt"></i>@<a href="https://github.com/ozh">ozh</a></li>
-            <li class="username"><i class="fa fa-facebook-square"></i><a href="https://www.facebook.com/ozh.richard">ozh.richard</a></li>
-            <li class="user-loc"><i class="fa fa-map-marker"></i>Nantes, FR</li>
-            <li class="user-url"><i class="fa fa-link"></i><a href="http://ozh.org">ozh.org</a></li>
-            <li class="user-url"><i class="fa fa-link"></i><a href="http://planetozh.com">planetozh.com</a></li>
+            <li class="user-displayname">DISPLAY NAME</li>
+            <li class="username"><i class="fa fa-twitter"></i>@<a href="https://twitter.com/USERNAME">USERNAME</a></li>
+            <li class="user-loc"><i class="fa fa-map-marker"></i>LOCATION</li>
+
+<!-- Font Awesome icon reference for customizing URL badges: https://fontawesome.com/icons -->
+            <li class="user-url"><i class="fa fa-link"></i><a href="http://YOURWEBSITE.COM/">WEBSITE</a></li>
+            
+			<li class="user-bio"><p>YOUR BIO HERE</p></li>
+			
+<!-- Use tweeterid.com to look up your user ID for DM button -->
+			
+			<li class="user-dm-follow"><p><a href="https://twitter.com/messages/compose?recipient_id=YOUR_USER_ID&text=DEFAULT_MESSAGE" class="twitter-dm-button" data-screen-name="@username">DM @USERNAME</a></p>
+				<p><a class="twitter-follow-button" href="https://twitter.com/USERNAME" data-show-count="false" data-show-screen-name="false">Follow @USERNAME</a></p></li>
         </ul>
     </div>
 </div>
 <!-- END #user -->
+	
+<!-- !BEGIN Twitter tools -->
+<aside id="twitter-tools">
+	<nav class="twitter-tools">
+		<h2>
+		  <i class="fa fa-info-circle"></i> Twitter Reference
+		</h2>
 
+		<ul>
+			<li><a href="https://cards-dev.twitter.com/validator" target="_new">Card validator</a></li>
+			<li><a href="https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup" target="_new">Card markup reference</a></li>
+			<li><a href="https://publish.twitter.com/" target="_new">Embed publisher</a></li>
+			<li><a href="https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/overview" target="_new">Embedded tweet documentation</a></li>
+			<li><a href="https://developer.twitter.com/en/docs/twitter-api/v1/data-dictionary/object-model/tweet" target="_new">Tweet data dictionary</a></li>
+			<li><a href="https://developer.twitter.com/en/docs/twitter-for-websites/web-intents/overview" target="_new">Web intents documentation</a></li>
+			<li><a href="https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/overview" target="_new">Tweet text components</a></li>
+			<li><a href="https://twemoji.twitter.com/" target="_new">Twemoji</a></li>
+		</ul>
+
+	</nav>
+</aside>
+	
 <?php
 // If you set up static pages for posts and front page, display links. See the comment in file stream_toggle.php
 if( get_option( 'page_for_posts' ) )
