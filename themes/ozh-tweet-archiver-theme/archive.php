@@ -3,7 +3,7 @@
 <?php if (have_posts()) : ?>
 
 <!-- !BEGIN #tweets -->
-<div id="tweets">
+<main>
 <?php /* If this is a monthly archive */ if (is_month()) { ?>
 <h2>Tweet Archive for <?php single_month_title( ' ' );; ?>
 <?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
@@ -18,21 +18,23 @@
 ?></h2>
 
 <?php while (have_posts()) : the_post(); ?>
-  <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-    <div class="tweet">
+  <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+    <section>
       <?php the_content() ?>
-    </div>
-    <?php get_template_part( 'post_meta' ); ?>
-  </div>
+    </section>
+    <footer>
+	     <?php get_template_part( 'post_meta' ); ?>
+	   <footer>
+  </article>
 
 <?php endwhile; ?>
 
-    <div class="pagination">
+    <nav class="pagination">
       <div class="older"><?php next_posts_link('&laquo; Older tweets') ?></div>
       <div class="newer"><?php previous_posts_link('Newer tweets &raquo;') ?></div>
-    </div>
+    </nav>
 
-</div>
+</main>
 <!-- END #tweets -->
 
 <?php else :
