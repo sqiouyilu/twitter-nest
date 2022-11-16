@@ -70,6 +70,11 @@ The Twitter archiver plugin can only access your 3,200 most recent tweets for an
 
 ## Additional tools and resources
 
+### Automated WordPress backup tool
+
+- Back up your backup so you have multiple mirrors in case one goes down.
+- Several plugins available, such as [UpdraftPlus](https://updraftplus.com/).
+
 ### [jessefogarty/tweet-archive-converter.py](https://gist.github.com/jessefogarty/b0f2d4ea6bdd770e5e9e94d54154c751)
 
 - Python command line script to convert downloaded Twitter archive tweets from JSON to CSV.
