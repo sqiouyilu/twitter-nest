@@ -48,12 +48,15 @@ Screenshot of theme
 ### Screenshots
 
 ![nest-theme_user-info_1](https://user-images.githubusercontent.com/27913821/202977825-26991efb-b025-4f32-91da-b1ecf4b87d4a.png) ![nest-theme_user-info_2](https://user-images.githubusercontent.com/27913821/202977829-79ddc62f-c265-4896-92f6-0252dae58dfd.png)
+
 User information customization options
 
 ![nest-theme_colors](https://user-images.githubusercontent.com/27913821/202977831-567c32b7-035b-4fcf-a326-b879c699cda5.png)
+
 Color palette customization option
 
 ![nest-theme_menu](https://user-images.githubusercontent.com/27913821/202977832-84a2dc06-b9a5-4d9c-8fca-4358e0b68f99.png) ![nest-theme_menu_font-awesome](https://user-images.githubusercontent.com/27913821/202977834-75dc75dd-f8a1-4339-8548-0b941e73ead1.png)
+
 Menu links customization interfaces
 
 ----
