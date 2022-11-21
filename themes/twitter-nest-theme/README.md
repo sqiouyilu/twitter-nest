@@ -4,7 +4,7 @@ WordPress theme designed to work with [Twitter Nest](https://github.com/sqiouyil
 
 **Live demo:** [Tweets by @sqiouyilu](https://s.qiouyi.lu/tweets/)
 
-[![Twitter Nest Theme](https://raw.githubusercontent.com/sqiouyilu/twitter-nest/twitter-nest-theme/screenshot.png)](https://github.com/sqiouyilu/twitter-nest/)
+[![Twitter Nest Theme](https://github.com/sqiouyilu/twitter-nest/blob/a8a97482574a3b7d65fcf42a06567e8b5dc6892e/themes/twitter-nest-theme/screenshot.png)](https://github.com/sqiouyilu/twitter-nest/)
 
 ## Installation
 
