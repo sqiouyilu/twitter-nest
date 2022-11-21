@@ -3,16 +3,21 @@
 <?php if (have_posts()) : ?>
 
 <!-- !BEGIN #tweets -->
-<main>
+<main id="content">
+	
+		<!-- Search form -->
+		<aside id="global-search" class="view-mobile">
+			<?php get_search_form(); ?>
+		</aside>
 
-<h2>Recent tweets
+<h1>Recent tweets
     <?php if( get_option( 'page_for_posts' ) ) echo "and replies"; ?>
     <?php if( $paged > 1 ) echo "&laquo; page $paged"; ?>
-    </h2>
+    </h1>
 
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-    <section class="tweet <?php echo otat_get_tweet_style(); ?>">
+    <section class="tweet">
         <?php the_content(); ?>
     </section>
     <footer>

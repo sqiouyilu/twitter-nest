@@ -1,0 +1,986 @@
+/*
+Theme Name: Twitter Nest Theme
+Theme URI: https://github.com/sqiouyilu/twitter-nest
+Description: Theme for Twitter Nest toolkit.
+Version: 1.0.0
+Author: S. Qiouyi Lu
+Author URI: https://s.qiouyi.lu/
+Based on: Ozh' Tweet Archiver Theme by ozh
+Base theme URI: https://github.com/ozh/ozh-tweet-archive-theme
+Tags: twitter, tweets, archive
+*/
+
+/* ====================================================================
+REFERENCE
+=======================================================================
+
+Table 1: Twitter color palette
+--------------------------------
+			Color name  Hex code
+----------------------  --------
+				  Blue	#1DA1F2
+				 Black	#14171A
+			 Dark Gray	#657786
+			Light Gray	#AAB8C2
+	  Extra Light Gray	#E1E8ED
+Extra Extra Light Gray	#F5F8FA
+--------------------------------
+
+*/
+
+/* ====================================================================
+NORMALIZE
+==================================================================== */
+
+/* Set global variables */
+
+	:root {
+		
+		/* Color palette */
+		--accent: #1DA1F2;
+		--text: #14171A;
+		--deep: #657786;
+		--mid: #AAB8C2;
+		--light: #E1E8ED;
+		--subtle: #F5F8FA;
+		--background: White;
+		--safety-blue: #2B79A2;
+		
+		--retweet: MediumSeaGreen;
+		--like: Tomato;
+		
+		/* Typography */
+		--font-size: 1em;
+		--line-height: 1.2em;
+		--font-family: Helvetica, sans-serif;
+		
+		--biggest: 1.8em;
+		--bigger: 1.5em;
+		--big: 1.2em;
+		--small: 0.8em;
+		--smaller: 0.7em;
+		
+		--paragraph-spacing: 0.8em;
+		
+		/* Blocks */
+		--box-size: 1440px;
+		--widget-header: 60px;
+		--off-canvas: -9999px;
+		--stats-bar: calc(var(--font-size) * 4);
+		--search-size: 60px;
+		--search-button: 80px;
+		--viz-size: 50px;
+		
+		/* Borders */
+		--avatar-border: 5px solid;
+		--avatar-shadow: 1px 3px;
+		--notice-shadow: 5px 5px;
+		--border: 2px solid;
+		--border-subtle: 1px solid;
+		
+		--circle: 50%;
+		--rounded: 25px;
+		--rounded-subtle: 10px;
+		
+		/* White space */
+		--white-space: 10px;
+		
+		--widest: calc(var(--white-space) * 3);
+		--wider: calc(var(--white-space) * 2.5);
+		--wide: calc(var(--white-space) * 1.5);
+		--narrow: calc(calc(var(--white-space) / 10) * 7);
+		--narrower: calc(var(--white-space) / 2);
+		--narrowest: calc(var(--white-space) / 3);
+		
+		/* Images */
+		--avatar: url('img/avatar.jpg');
+		--banner: url('img/banner.jpg');
+		--diameter: 80px;
+		--avatar-position: calc(calc(var(--diameter) + var(--white-space)) / -2);
+		--banner-size: 200px;
+	}
+
+	body {
+		background: var(--light);
+		margin: 0;
+		padding: 0;
+		font: var(--font-size)/var(--line-height) var(--font-family);
+		color: var(--text);
+	}
+	
+	#box-container {
+		background-color: var(--background);
+		max-width: var(--box-size);
+		margin: 0 auto;
+	}
+	
+/* Set global typography */
+	
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+		padding: 0;
+	}
+	
+	h1 {
+		font-size: var(--biggest);
+		line-height: var(--font-size);
+	}
+	
+	h2 {
+		font-size: var(--bigger);
+		line-height: var(--font-size);
+	}
+	
+	h3 {
+		font-size: var(--big);
+		line-height: var(--font-size);
+	}
+	
+	p {
+		margin: var(--paragraph-spacing) 0;
+		padding: 0;
+	}
+
+/* Set default link color and behavior */
+
+	a, a:link, a:visited {
+		color: var(--accent);
+	}
+	
+	a:hover, a:focus, a:active {
+		text-decoration: none;
+	}
+
+	a img {
+		border-width: 0;
+		background: none;
+	}
+
+/* Normalize block behavior */
+	
+	img {
+		max-width: 100%;
+	}
+	
+	main,
+	aside,
+	#banner a,
+	#stats-wrap,
+	#avatar a,
+	.metric,
+	.statistic,
+	#user-quickref,
+	#user-contact,
+	#user-location,
+	#user-accessibility-container,
+	.meta,
+	#content,
+	.archive-visualizer li a,
+	.archive-bar-wrap,
+	.archive-bar,
+	.archive-bar-label {
+		display: block;
+		box-sizing: border-box;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+/* Define lists being used for block styling */
+	
+	#stats-header,
+	#user-contact,
+	#contact-on-twitter,
+	#sidebar ul,
+	.archive-visualizer {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	#stats-header li,
+	#user-contact li,
+	#sidebar ul li,
+	.archive-visualizer li {
+		margin: 0;
+		padding: 0;
+	}
+
+/* Set flex behavior */
+	
+	#stats-header,
+	#stats-header li,
+	#user,
+	#user-contact,
+	#contact-on-twitter,
+	#user-pronouns,
+	.meta-intents,
+	.pagination,
+	.wp-tag-cloud,
+	.stats,
+	.archive-year-title,
+	.archive-visualizer,
+	#global-search,
+	#global-search #searchform {
+		display: flex;
+	}
+	
+	/* Vertical flex */
+		
+		#stats-header li,
+		#user {
+			flex-flow: column wrap;
+		}
+		
+	/* Horizontal flex - no wrap */
+		
+		#stats-header,
+		#user-pronouns,
+		.meta-intents,
+		.pagination,
+		.stats,
+		.archive-year-title,
+		.archive-visualizer,
+		#global-search #searchform {
+			flex-flow: row nowrap;
+			justify-content: space-between;
+		}
+		
+	/* Horizontal flex - wrap */
+		
+		#user-contact,
+		#contact-on-twitter,
+		.wp-tag-cloud {
+			flex-flow: row wrap;
+			justify-content: flex-start;
+		}
+
+	/* Horizontal flex - reverse */
+
+		#user-contact li a {
+			align-items: center;
+			display: flex;
+			flex-flow: row-reverse nowrap;
+		}
+
+/* ====================================================================
+ELEMENT STYLING
+==================================================================== */
+
+/* Banner */
+
+	#banner a {
+		background: var(--accent) var(--banner) no-repeat center;
+		background-size: cover;
+		height: var(--banner-size);
+	}
+	
+/* Statistics header */
+
+	#stats-wrap {
+		background-color: var(--light);
+		border-bottom: var(--border) var(--mid);
+		padding: var(--wide) var(--white-space) var(--white-space) var(--white-space);
+		height: var(--stats-bar);
+	}
+	
+	#avatar a {
+		position: relative;
+		text-indent: var(--off-canvas);
+		border: var(--avatar-border) var(--subtle);
+		box-shadow: var(--avatar-shadow) var(--mid);
+		top: var(--avatar-position);
+		left: 0px;
+		width: var(--diameter);
+		height: var(--diameter);
+		z-index: 2;
+		color: var(--deep);
+		background: var(--deep) var(--avatar) no-repeat center;
+		background-size: cover;
+		border-radius: var(--circle);
+	}
+	
+	.metric, .statistic {
+		text-align: center;
+	}
+	
+	.metric {
+		color: var(--accent);
+		margin: var(--narrowest) auto;
+		font-size: var(--smaller);
+		line-height: var(--smaller);
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	
+	.statistic {
+		margin: 0 auto;
+		line-height: var(--line-height);
+		min-height: var(--line-height);
+		font-size: var(--big);
+	}
+	
+/* User info */
+
+	#user {
+		background-color: var(--light);
+		padding: var(--white-space) var(--white-space) var(--wider) var(--white-space);
+	}
+	
+	#user h2 {
+		margin: var(--wide) 0 var(--white-space) 0;
+	}
+	
+	#user-quickref {
+		max-width: 70%;
+	}
+	
+	#user-location, #user-pronouns {
+		font-size: var(--small);
+		float: left;
+		width: 50%;
+	}
+	
+	#user-bio {
+		clear: both;
+	}
+	
+	#user-location i, #user-pronouns i {
+		width: var(--font-size);
+		color: var(--deep);
+		margin-right: var(--white-space);
+		text-align: center;
+	}
+	
+	#user-pronouns {
+		justify-content: flex-start;
+		margin-top: 0;
+	}
+	
+	#user-accessibility-container {
+		background-color: var(--background);
+		border: var(--border) var(--safety-blue);
+		border-radius: var(--rounded-subtle);
+		box-shadow: var(--notice-shadow) var(--mid);
+		padding: var(--white-space);
+		margin: var(--white-space) 0;
+	}
+	
+	#user-accessibility-container h3 {
+		color: var(--safety-blue);
+		margin: var(--white-space) 0;
+	}
+
+	.links-out-header {
+		margin: var(--wide) 0 var(--narrow) 0;
+		padding: 0;
+		font-size: var(--font-size);
+	}
+
+	#user-contact {
+		margin-bottom: var(--narrow);
+	}
+	
+	#user-contact li {
+		font-size: var(--small);
+		margin-right: var(--white-space);
+	}
+
+	#user-contact li a,
+	#contact-on-twitter li a {
+		text-decoration: none;
+		border-radius: var(--rounded);
+	}
+		
+	#user-contact li a {
+		background-color: var(--subtle);
+		color: var(--text);
+		border: var(--border-subtle) var(--subtle);
+		padding: var(--narrowest) var(--wide);
+		margin: var(--narrow) 0;
+	}
+
+	#user-contact li a:hover {
+		border: var(--border-subtle) var(--accent);
+	}
+	
+	
+	#user-contact li a i {
+		color: var(--deep);
+		margin-right: var(--narrowest);
+		padding-bottom: var(--narrowest);
+	}
+	
+	#contact-on-twitter li {
+		margin: 0 var(--white-space) var(--wide) 0;
+	}
+	
+	#contact-on-twitter li a {
+		background-color: var(--accent);
+		color: var(--background);
+		padding: var(--narrow) var(--wide);
+		font-weight: bold;
+		font-size: var(--small);
+	}
+
+/* Search form */
+
+	#global-search {
+		background-color: var(--deep);
+		padding: var(--wide) var(--white-space);
+		align-items: center;
+		height: var(--search-size);
+	}
+	
+	#global-search #searchform {
+		width: 100%;
+	}
+	
+	#global-search #s {
+		width: calc(100% - calc(var(--search-button) + var(--white-space)));
+		flex: 3 3 0;
+		border: none;
+		border-radius: var(--rounded);
+		padding: var(--narrowest) var(--white-space);
+		background-color: var(--background);
+		color: var(--deep);
+		font-size: var(--font-size);
+	}
+	
+	#global-search #searchsubmit {
+		width: var(--search-button);
+		margin-left: var(--white-space);
+		flex: 1 1 0;
+		background-color: var(--accent);
+		padding: var(--narrowest) var(--white-space);
+		color: var(--background);
+		font-size: var(--font-size);
+		font-weight: bold;
+		border: none;
+		border-radius: var(--rounded);
+	}
+	
+	#searchsubmit {
+		white-space: nowrap;
+	}
+
+/* Container */
+	
+	#content h1 {
+		background-color: var(--subtle);
+		padding: var(--widest) var(--white-space) var(--wider) var(--white-space);
+		margin-bottom: var(--wide);
+		border-bottom: var(--border) var(--light);
+	}
+	
+/* Tweets */
+
+	.tweet {
+		padding: var(--white-space) var(--white-space) 0 var(--white-space);
+		font-size: var(--big);
+		line-height: var(--line-height);
+	}
+
+	.embed_image_yes {
+		display: table;
+		box-sizing: border-box;
+		border: var(--border-subtle) var(--light);
+    	border-radius: var(--rounded-subtle);
+    	padding: var(--narrow);
+		margin: var(--wide) auto;
+		min-width: 100px;
+    	max-width: 90%;
+    	line-height: var(--font-size);
+	}
+
+	.embed_image_yes a:hover {
+    	background: none;
+	}
+
+	.embed_image_yes img {
+    	border-radius: var(--rounded-subtle);
+	    max-width: 100%;
+	}
+
+	.link_untco_image {
+    	display: none;
+	}
+
+	.meta-reply,
+	.meta-retweet,
+	.meta-like,
+	.meta-twitterlink,
+	.meta-wplink {
+		white-space: nowrap;
+	}
+	
+	.meta-intents {
+		border-top: var(--border-subtle) var(--light);
+		padding: var(--wider) var(--white-space) 0 var(--white-space);
+	}
+	
+	.meta-reply a,
+	.meta-retweet a,
+	.meta-like a {
+		text-decoration: none;
+		color: var(--deep);
+		font-size: var(--small);
+		padding: var(--narrower) var(--wider);
+	}
+	
+	.meta-reply a:hover,
+	.meta-reply a:focus {
+		color: var(--accent);
+	}
+	
+	.meta-retweet a:hover,
+	.meta-retweet a:focus {
+		color: var(--retweet);
+	}
+	
+	.meta-like a:hover,
+	.meta-like a:focus {
+		color: var(--like);
+	}
+	
+	.meta-origin {
+		background-color: var(--light);
+		font-style: italic;
+		font-size: var(--small);
+		line-height: var(--line-height);
+		color: var(--deep);
+		padding: var(--white-space);
+	}
+	
+	.meta-origin i {
+		font-size: var(--smaller);
+	}
+	
+	.meta-twitterlink,
+	.meta-wplink,
+	.meta-edit {
+		font-style: normal;
+		margin: 0 var(--narrowest);
+	}
+	
+/* Pagination */
+
+	.pagination {
+		background-color: var(--deep);
+		padding: var(--wide) var(--white-space);
+		margin: calc(var(--white-space) * -1) auto 0 auto;
+	}
+	
+	.pagination a {
+		color: var(--background);
+	}
+
+/* Sidebar */
+
+	#global-search.view-desktop {
+		display: none;
+	}
+
+	#sidebar {
+		background-color: var(--subtle);
+	}
+
+	#sidebar .widget {
+		margin-bottom: var(--wider);
+	}
+	
+	#sidebar .widget:last-child {
+		margin-bottom: 0;
+	}
+	
+	#sidebar .widget section {
+		padding: var(--white-space);
+	}
+	
+	#sidebar .widget h2 {
+		display: flex;
+		align-items: center;
+		background-color: var(--accent);
+		color: var(--background);
+		padding: 0;
+		margin: 0;
+		height: var(--widget-header);
+	}
+	
+	#sidebar .widget h2 i {
+		margin: 0 var(--white-space);
+		padding: 0 0 var(--narrower) 0;
+	}
+	
+	.stats {
+		align-items: center;
+		height: var(--bigger);
+	}
+	
+	.stats:hover,
+	.stats:focus {
+		background-color: var(--light);
+	}
+	
+	.stats-label {
+		font-weight: bold;
+	}
+	
+	#sidebar .wp-tag-cloud li {
+		margin: var(--narrowest) var(--narrower);
+	}
+	
+	#sidebar .wp-tag-cloud li a,
+	#sidebar .twitter-reference li a,
+	#sidebar #meta li a {
+		background-color: var(--light);
+		color: var(--text);
+		font-weight: bold;
+		padding: var(--narrowest) var(--narrow);
+		border-radius: var(--narrower);
+		text-decoration: none;
+	}
+	
+	#sidebar .wp-tag-cloud li a::before {
+		content: '#';
+		color: var(--deep);
+	}
+	
+	#sidebar .twitter-reference li,
+	#sidebar #meta li {
+		margin: var(--white-space) 0;
+	}
+	
+	#sidebar .wp-tag-cloud li a:hover,
+	#sidebar .twitter-reference li a:hover,
+	#sidebar #meta li a:hover {
+		background-color: var(--accent);
+		color: var(--background);
+	}
+	
+	/* Archive visualizer */
+		
+		.archive-year-title {
+			margin: var(--white-space) 0;
+		}
+		
+		.archive-visualizer {
+			margin-top: var(--wide);
+			overflow: hidden;
+		}
+		
+		.archive-visualizer li {
+			display: block;
+			width: 100%;
+			height: var(--viz-size);
+			border: var(--border) var(--subtle);
+			background-color: var(--light);
+		}
+		
+		.empty {
+			background-color: var(--light);
+		}
+		
+		.archive-visualizer li a {
+			text-decoration: none;
+			height: var(--viz-size);
+			background: none;
+		}
+		
+		.archive-visualizer li a:hover {
+			background: inherit;
+		}
+		
+		.archive-bar-wrap {
+			height: 100%;
+			background: var(--mid);
+		}
+		
+		.archive-bar-label {
+			position: relative;
+			text-decoration: none;
+			bottom: var(--wider);
+			left: 0px;
+			height: var(--wide);
+			font-size: var(--wide);
+			text-align: center;
+			color: var(--background);
+		}
+		
+		.archive-bar {
+			background-color: var(--light);
+		}
+		
+		.not-empty:hover {
+			background: var(--accent);
+		}
+		
+		.not-empty:hover .archive-bar-wrap {
+			background: var(--accent);
+		}
+
+/* Credits */
+
+	#credits {
+		background-color: var(--accent);
+		padding: var(--narrower);
+		font-size: var(--smaller);
+		line-height: var(--font-size);
+		color: var(--background);
+		text-align: center;
+	}
+	
+	#credits a {
+		color: var(--background);
+	}
+	
+/* Responsive adjustments */
+
+@media screen and (min-width: 768px) {
+
+	#banner a {
+		--banner-size: 300px;
+	}
+	
+	#stats-wrap {
+		--stats-bar: calc(var(--line-height) * 6);
+		padding: var(--wide) var(--wider);
+	}
+	
+	#avatar a {
+		--avatar-position: calc(calc(var(--diameter) + var(--white-space)) / -2);
+		--avatar-border: var(--narrow) solid;
+		--avatar-shadow: 2px 4px;
+		--diameter: 150px;
+	}
+	
+	.metric {
+		margin: var(--narrowest) auto 0px auto;
+		font-size: var(--big);
+		line-height: var(--big);
+	}
+	
+	.statistic {
+		line-height: var(--biggest);
+		min-height: var(--biggest);
+		font-size: var(--biggest);
+	}
+	
+/* User info */
+
+	#user {
+		background-color: var(--light);
+		padding: var(--white-space) var(--wide) var(--wider) var(--wide);
+		flex-flow: row nowrap;
+	}
+	
+	.links-out-header {
+		margin-top: var(--wider);
+	}
+	
+	#user-summary {
+		flex: 2 1 0;
+		padding-right: var(--wide);
+	}
+	
+	#user-contact-information {
+		flex: 1 1 0;
+		padding-left: var(--wide);
+	}
+	
+	#user-contact li {
+		font-size: var(--font-size);
+		margin-right: var(--wide);
+	}
+	
+	#contact-on-twitter a {
+		font-size: var(--font-size);
+	}
+	
+/* Body adjustments */
+
+	#content-container {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	
+	#content {
+		flex: 3 1 0;
+	}
+
+	#sidebar {
+		flex: 1 1 0;
+	}
+	
+	#global-search #s {
+		flex: 5 3 0;
+	}
+	
+	#global-search #searchsubmit {
+		flex: 1 1 0;
+	}
+	
+	.pagination {
+		margin: calc(var(--wide) * -1) auto 0 auto;
+	}
+	
+	#credits {
+		text-align: left;
+		padding-left: var(--wide);
+	}
+
+}
+
+@media screen and (min-width: 1100px) {
+
+/* Header adjustments */
+	
+	/* Statistics header */
+
+	#stats-wrap {
+		border: var(--border) var(--mid);
+		border-top: 0;
+	}
+	
+	#avatar a {
+		--avatar-shadow: 4px 8px;
+		--diameter: 240px;
+		border: var(--wide) solid var(--subtle);
+		--avatar-position: calc(calc(var(--diameter) + var(--white-space)) / -1.5);
+	}
+	
+	.metric {
+		margin: var(--narrowest) auto 0px auto;
+		font-size: var(--big);
+		line-height: var(--big);
+	}
+	
+	.statistic {
+		line-height: var(--biggest);
+		min-height: var(--biggest);
+		font-size: var(--biggest);
+	}
+	
+/* User info */
+
+	#user, #user-summary, #user-contact-information {
+		display: block;
+	}
+	
+	#user-quickref {
+		width: 100%;
+		max-width: 100%;
+	}
+	
+	#user-location, #user-pronouns {
+		width: 100%;
+		float: none;
+	}
+	
+	#user-summary {
+		padding-right: 0;
+	}
+	
+	#user-contact-information {
+		padding-left: 0;
+	}
+	
+	#user-bio {
+		font-size: var(--big);
+		line-height: var(--big);
+		width: 100%;
+		display: block;
+		float: none;
+	}
+	
+	#user-contact {
+		width: 100%;
+		margin-bottom: var(--white-space);
+		padding: 0;
+		display: flex;
+		flex-flow: row wrap;
+	}
+	
+	#user-contact li a {
+		border: var(--border-subtle) var(--mid);
+	}
+	
+	#contact-on-twitter {
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-items: flex-start;
+	}
+	
+	#contact-on-twitter li {
+		margin-bottom: var(--wide);
+	}
+	
+	#contact-on-twitter li a {
+		font-size: var(--small);
+		height: var(--font-size);
+	}
+	
+/* Body adjustments */
+	
+	article[id^="post"] .tweet {
+		font-size: var(--bigger);
+		line-height: var(--bigger);
+		padding: var(--white-space) var(--wider) var(--narrower) var(--wider);
+		margin: 0;
+	}
+	
+	.meta-intents {
+		padding-top: var(--wider);
+		font-size: var(--bigger);
+	}
+	
+	.meta-origin {
+		font-size: var(--font-size);
+		padding: var(--wide) var(--wider);
+	}
+
+	#body-container {
+		display: flex;
+		flex-flow: row nowrap;
+		border-left: var(--border) var(--mid);
+		border-right: var(--border) var(--light);
+	}
+	
+	#user {
+		background-color: var(--subtle);
+		flex: 1 1 0;
+		border-right: var(--border) var(--light);
+	}
+	
+	#content-container {
+		flex: 4 1 0;
+	}
+	
+	#content {
+		border-right: var(--border) var(--light);
+	}
+	
+	#global-search.view-mobile {
+		display: none;
+	}
+	
+	#global-search.view-desktop {
+		width: 90%;
+		margin-left: 10%;
+		position: relative;
+		top: var(--wider);
+		right: 0;
+		background-color: transparent;
+		display: flex;
+	}
+	
+	#global-search.view-desktop .submit-label {
+		display: none;
+	}
+	
+	#credits {
+		text-align: center;
+	}
+
+}

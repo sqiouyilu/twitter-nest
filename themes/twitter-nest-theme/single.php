@@ -3,17 +3,23 @@
 <?php if (have_posts()) : ?>
 
 <!-- !BEGIN #tweet -->
-<main>
+<main id="content">
+
+		<!-- Search form -->
+		<aside id="global-search" class="view-mobile">
+			<?php get_search_form(); ?>
+		</aside>
+
 <?php while (have_posts()) : the_post(); ?>
 
-  <h2>Tweet #<?php do_action( 'ozh_ta_id' ); ?></h2>
+  <h1>Tweet #<?php do_action( 'ozh_ta_id' ); ?></h1>
   <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-    <section>
-      <?php the_content(); ?>
+    <section class="tweet">
+        <?php the_content(); ?>
     </section>
     <footer>
 	    <?php get_template_part( 'post_meta' ); ?>
-  	<footer>
+	</footer>
   </article>
 
 <?php endwhile; ?>

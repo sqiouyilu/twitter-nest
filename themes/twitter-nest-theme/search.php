@@ -3,17 +3,23 @@
 <?php if (have_posts()) : ?>
 
 <!-- !BEGIN #tweets -->
-<main>
-<h2>Search results for &laquo;<?php the_search_query(); ?>&raquo; <?php if( $paged > 1 ) echo "&laquo; page $paged"; ?></h2>
+<main id="content">
+
+		<!-- Search form -->
+		<aside id="global-search" class="view-mobile">
+			<?php get_search_form(); ?>
+		</aside>
+		
+<h1>Search results for <mark><?php the_search_query(); ?></mark> <?php if( $paged > 1 ) echo "&raquo; page $paged"; ?></h1>
 
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-    <section>
-      <?php the_content(); ?>
+    <section class="tweet">
+        <?php the_content(); ?>
     </section>
     <footer>
 	    <?php get_template_part( 'post_meta' ); ?>
-  	</footer>
+	</footer>
   </article>
 
 <?php endwhile; ?>

@@ -1,7 +1,12 @@
 <?php get_header(); ?>
 
-<!-- !BEGIN #tweet -->
-<main>
+<!-- !BEGIN #tweets -->
+<main id="content">
+	
+		<!-- Search form -->
+		<aside id="global-search" class="view-mobile">
+			<?php get_search_form(); ?>
+		</aside>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <article class="post" id="post-<?php the_ID(); ?>">
@@ -10,10 +15,11 @@
     <?php the_content(); ?>
   </section>
 </article>
+
 <?php endwhile; endif; ?>
 <?php edit_post_link('[edit]', '<p>', '</p>'); ?>
 
-</div>
+</main>
 <!-- END #tweet -->
   
   
