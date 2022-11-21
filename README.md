@@ -48,7 +48,7 @@ The Twitter archiver plugin can only access your 3,200 most recent tweets for an
 
 - Automatically archive new tweets to WordPress. Requires [developer account](https://developer.twitter.com/).
 
-### [ozh/ozh-tweet-archiver-theme](https://github.com/ozh/ozh-tweet-archiver-theme)
+### Twitter nest theme
 
 - Theme to display tweets.
 
